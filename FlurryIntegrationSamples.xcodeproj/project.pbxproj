@@ -1,0 +1,510 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5B1728E318E6524700332F7E /* BannerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B1728E118E6524700332F7E /* BannerViewController.m */; };
+		5B4EE1EB19D4AF23000B698B /* libFlurry_5.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4EE1EA19D4AF23000B698B /* libFlurry_5.4.0.a */; };
+		5B4EE1ED19D4AF33000B698B /* libFlurryAds_5.4.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4EE1EC19D4AF33000B698B /* libFlurryAds_5.4.0.a */; };
+		5B4EE1EF19D4AFFD000B698B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4EE1EE19D4AFFD000B698B /* StoreKit.framework */; };
+		5B965AEB18E23CDC00FB2166 /* TakeoverAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AEA18E23CDC00FB2166 /* TakeoverAdSpaceList.plist */; };
+		5B965AFC18E2605F00FB2166 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AEE18E2605F00FB2166 /* Default.png */; };
+		5B965AFD18E2605F00FB2166 /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AEF18E2605F00FB2166 /* Default~ipad.png */; };
+		5B965AFE18E2605F00FB2166 /* Default~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF018E2605F00FB2166 /* Default~iphone.png */; };
+		5B965AFF18E2605F00FB2166 /* flurry-demo-landscape-4s.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF118E2605F00FB2166 /* flurry-demo-landscape-4s.png */; };
+		5B965B0018E2605F00FB2166 /* flurry-demo-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF218E2605F00FB2166 /* flurry-demo-landscape.png */; };
+		5B965B0118E2605F00FB2166 /* flurry-demo768-1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF318E2605F00FB2166 /* flurry-demo768-1024.png */; };
+		5B965B0218E2605F00FB2166 /* flurry-splash-landscape-4s.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF418E2605F00FB2166 /* flurry-splash-landscape-4s.png */; };
+		5B965B0318E2605F00FB2166 /* flurry-splash-landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF518E2605F00FB2166 /* flurry-splash-landscape.png */; };
+		5B965B0418E2605F00FB2166 /* flurry-splash-landscape1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF618E2605F00FB2166 /* flurry-splash-landscape1024.png */; };
+		5B965B0518E2605F00FB2166 /* flurry-splash-portrait-4s.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF718E2605F00FB2166 /* flurry-splash-portrait-4s.png */; };
+		5B965B0618E2605F00FB2166 /* flurry-splash-portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF818E2605F00FB2166 /* flurry-splash-portrait.png */; };
+		5B965B0718E2605F00FB2166 /* flurry-splash-portrait768.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AF918E2605F00FB2166 /* flurry-splash-portrait768.png */; };
+		5B965B0818E2605F00FB2166 /* flurryicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B965AFA18E2605F00FB2166 /* flurryicon.png */; };
+		5BB07AA318E0FFD8007A7F50 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AA218E0FFD8007A7F50 /* Foundation.framework */; };
+		5BB07AA518E0FFD8007A7F50 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AA418E0FFD8007A7F50 /* CoreGraphics.framework */; };
+		5BB07AA718E0FFD8007A7F50 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AA618E0FFD8007A7F50 /* UIKit.framework */; };
+		5BB07AAD18E0FFD8007A7F50 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5BB07AAB18E0FFD8007A7F50 /* InfoPlist.strings */; };
+		5BB07AAF18E0FFD8007A7F50 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB07AAE18E0FFD8007A7F50 /* main.m */; };
+		5BB07AB318E0FFD8007A7F50 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB07AB218E0FFD8007A7F50 /* AppDelegate.m */; };
+		5BB07AB618E0FFD8007A7F50 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB07AB418E0FFD8007A7F50 /* Main_iPhone.storyboard */; };
+		5BB07AB918E0FFD8007A7F50 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BB07AB718E0FFD8007A7F50 /* Main_iPad.storyboard */; };
+		5BB07ABC18E0FFD8007A7F50 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB07ABB18E0FFD8007A7F50 /* MasterViewController.m */; };
+		5BB07ABF18E0FFD8007A7F50 /* TakeoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BB07ABE18E0FFD8007A7F50 /* TakeoverViewController.m */; };
+		5BB07AC118E0FFD8007A7F50 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BB07AC018E0FFD8007A7F50 /* Images.xcassets */; };
+		5BB07AEC18E10505007A7F50 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AEB18E10505007A7F50 /* AdSupport.framework */; };
+		5BB07AEE18E10516007A7F50 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AED18E10516007A7F50 /* MediaPlayer.framework */; };
+		5BB07AF018E1051F007A7F50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AEF18E1051F007A7F50 /* Security.framework */; };
+		5BB07AF418E1053C007A7F50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AF318E1053C007A7F50 /* SystemConfiguration.framework */; };
+		5BB07AF618E1054A007A7F50 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AF518E1054A007A7F50 /* libz.dylib */; };
+		5BB07AF818E107DE007A7F50 /* ApplicationList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BB07AF718E107DE007A7F50 /* ApplicationList.plist */; };
+		5BC0BE6318FDB11B00A53EA6 /* BannerAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5BC0BE6218FDB11B00A53EA6 /* BannerAdSpaceList.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5B1728E018E6524700332F7E /* BannerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BannerViewController.h; path = FlurryFlow/BannerViewController.h; sourceTree = "<group>"; };
+		5B1728E118E6524700332F7E /* BannerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BannerViewController.m; path = FlurryFlow/BannerViewController.m; sourceTree = "<group>"; };
+		5B4EE1EA19D4AF23000B698B /* libFlurry_5.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_5.4.0.a; sourceTree = "<group>"; };
+		5B4EE1EC19D4AF33000B698B /* libFlurryAds_5.4.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAds_5.4.0.a; sourceTree = "<group>"; };
+		5B4EE1EE19D4AFFD000B698B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		5B965AEA18E23CDC00FB2166 /* TakeoverAdSpaceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = TakeoverAdSpaceList.plist; sourceTree = "<group>"; };
+		5B965AEE18E2605F00FB2166 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		5B965AEF18E2605F00FB2166 /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		5B965AF018E2605F00FB2166 /* Default~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~iphone.png"; sourceTree = "<group>"; };
+		5B965AF118E2605F00FB2166 /* flurry-demo-landscape-4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flurry-demo-landscape-4s.png"; sourceTree = "<group>"; };
+		5B965AF218E2605F00FB2166 /* flurry-demo-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flurry-demo-landscape.png"; sourceTree = "<group>"; };
+		5B965AF318E2605F00FB2166 /* flurry-demo768-1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flurry-demo768-1024.png"; sourceTree = "<group>"; };
+		5B965AF418E2605F00FB2166 /* flurry-splash-landscape-4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flurry-splash-landscape-4s.png"; sourceTree = "<group>"; };
+		5B965AF518E2605F00FB2166 /* flurry-splash-landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flurry-splash-landscape.png"; sourceTree = "<group>"; };
+		5B965AF618E2605F00FB2166 /* flurry-splash-landscape1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flurry-splash-landscape1024.png"; sourceTree = "<group>"; };
+		5B965AF718E2605F00FB2166 /* flurry-splash-portrait-4s.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flurry-splash-portrait-4s.png"; sourceTree = "<group>"; };
+		5B965AF818E2605F00FB2166 /* flurry-splash-portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flurry-splash-portrait.png"; sourceTree = "<group>"; };
+		5B965AF918E2605F00FB2166 /* flurry-splash-portrait768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "flurry-splash-portrait768.png"; sourceTree = "<group>"; };
+		5B965AFA18E2605F00FB2166 /* flurryicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flurryicon.png; sourceTree = "<group>"; };
+		5BB07A9F18E0FFD8007A7F50 /* FlurryIntegrationSamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlurryIntegrationSamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5BB07AA218E0FFD8007A7F50 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		5BB07AA418E0FFD8007A7F50 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		5BB07AA618E0FFD8007A7F50 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		5BB07AAA18E0FFD8007A7F50 /* FlurryIntegrationSamples-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlurryIntegrationSamples-Info.plist"; sourceTree = "<group>"; };
+		5BB07AAC18E0FFD8007A7F50 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		5BB07AAE18E0FFD8007A7F50 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5BB07AB018E0FFD8007A7F50 /* FlurryIntegrationSamples-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlurryIntegrationSamples-Prefix.pch"; sourceTree = "<group>"; };
+		5BB07AB118E0FFD8007A7F50 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = FlurryFlow/AppDelegate.h; sourceTree = "<group>"; };
+		5BB07AB218E0FFD8007A7F50 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = FlurryFlow/AppDelegate.m; sourceTree = "<group>"; };
+		5BB07AB518E0FFD8007A7F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		5BB07AB818E0FFD8007A7F50 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		5BB07ABA18E0FFD8007A7F50 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MasterViewController.h; path = FlurryFlow/MasterViewController.h; sourceTree = "<group>"; };
+		5BB07ABB18E0FFD8007A7F50 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = MasterViewController.m; path = FlurryFlow/MasterViewController.m; sourceTree = "<group>"; };
+		5BB07ABD18E0FFD8007A7F50 /* TakeoverViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TakeoverViewController.h; path = FlurryFlow/TakeoverViewController.h; sourceTree = "<group>"; };
+		5BB07ABE18E0FFD8007A7F50 /* TakeoverViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = TakeoverViewController.m; path = FlurryFlow/TakeoverViewController.m; sourceTree = "<group>"; };
+		5BB07AC018E0FFD8007A7F50 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5BB07AE318E10337007A7F50 /* Flurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Flurry.h; sourceTree = "<group>"; };
+		5BB07AE618E10337007A7F50 /* FlurryAdDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdDelegate.h; sourceTree = "<group>"; };
+		5BB07AE718E10337007A7F50 /* FlurryAds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAds.h; sourceTree = "<group>"; };
+		5BB07AEB18E10505007A7F50 /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		5BB07AED18E10516007A7F50 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
+		5BB07AEF18E1051F007A7F50 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		5BB07AF318E1053C007A7F50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		5BB07AF518E1054A007A7F50 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		5BB07AF718E107DE007A7F50 /* ApplicationList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApplicationList.plist; sourceTree = "<group>"; };
+		5BC0BE6218FDB11B00A53EA6 /* BannerAdSpaceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = BannerAdSpaceList.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5BB07A9C18E0FFD8007A7F50 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5B4EE1EF19D4AFFD000B698B /* StoreKit.framework in Frameworks */,
+				5BB07AEC18E10505007A7F50 /* AdSupport.framework in Frameworks */,
+				5BB07AA518E0FFD8007A7F50 /* CoreGraphics.framework in Frameworks */,
+				5BB07AA318E0FFD8007A7F50 /* Foundation.framework in Frameworks */,
+				5BB07AEE18E10516007A7F50 /* MediaPlayer.framework in Frameworks */,
+				5B4EE1EB19D4AF23000B698B /* libFlurry_5.4.0.a in Frameworks */,
+				5BB07AF618E1054A007A7F50 /* libz.dylib in Frameworks */,
+				5B4EE1ED19D4AF33000B698B /* libFlurryAds_5.4.0.a in Frameworks */,
+				5BB07AF418E1053C007A7F50 /* SystemConfiguration.framework in Frameworks */,
+				5BB07AF018E1051F007A7F50 /* Security.framework in Frameworks */,
+				5BB07AA718E0FFD8007A7F50 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5B965AEC18E2603B00FB2166 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5B965AEE18E2605F00FB2166 /* Default.png */,
+				5B965AEF18E2605F00FB2166 /* Default~ipad.png */,
+				5B965AF018E2605F00FB2166 /* Default~iphone.png */,
+				5B965AF118E2605F00FB2166 /* flurry-demo-landscape-4s.png */,
+				5B965AF218E2605F00FB2166 /* flurry-demo-landscape.png */,
+				5B965AF318E2605F00FB2166 /* flurry-demo768-1024.png */,
+				5B965AF418E2605F00FB2166 /* flurry-splash-landscape-4s.png */,
+				5B965AF518E2605F00FB2166 /* flurry-splash-landscape.png */,
+				5B965AF618E2605F00FB2166 /* flurry-splash-landscape1024.png */,
+				5B965AF718E2605F00FB2166 /* flurry-splash-portrait-4s.png */,
+				5B965AF818E2605F00FB2166 /* flurry-splash-portrait.png */,
+				5B965AF918E2605F00FB2166 /* flurry-splash-portrait768.png */,
+				5B965AFA18E2605F00FB2166 /* flurryicon.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		5BB07A9618E0FFD8007A7F50 = {
+			isa = PBXGroup;
+			children = (
+				5BB07AA818E0FFD8007A7F50 /* FlurryIntegrationSamples */,
+				5BB07AA118E0FFD8007A7F50 /* Frameworks */,
+				5BB07AA018E0FFD8007A7F50 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5BB07AA018E0FFD8007A7F50 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5BB07A9F18E0FFD8007A7F50 /* FlurryIntegrationSamples.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5BB07AA118E0FFD8007A7F50 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5B4EE1EE19D4AFFD000B698B /* StoreKit.framework */,
+				5BB07AF518E1054A007A7F50 /* libz.dylib */,
+				5BB07AF318E1053C007A7F50 /* SystemConfiguration.framework */,
+				5BB07AEF18E1051F007A7F50 /* Security.framework */,
+				5BB07AED18E10516007A7F50 /* MediaPlayer.framework */,
+				5BB07AEB18E10505007A7F50 /* AdSupport.framework */,
+				5BB07AA218E0FFD8007A7F50 /* Foundation.framework */,
+				5BB07AA418E0FFD8007A7F50 /* CoreGraphics.framework */,
+				5BB07AA618E0FFD8007A7F50 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5BB07AA818E0FFD8007A7F50 /* FlurryIntegrationSamples */ = {
+			isa = PBXGroup;
+			children = (
+				5BB07AE218E10337007A7F50 /* Flurry */,
+				5BB07AE518E10337007A7F50 /* FlurryAds */,
+				5BD60B7319103D81000EC575 /* FlurrySamplesCode */,
+				5B965AEC18E2603B00FB2166 /* Images */,
+				5BB07AA918E0FFD8007A7F50 /* Supporting Files */,
+				5BB07AC018E0FFD8007A7F50 /* Images.xcassets */,
+			);
+			name = FlurryIntegrationSamples;
+			path = FlurryFlow;
+			sourceTree = "<group>";
+		};
+		5BB07AA918E0FFD8007A7F50 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5BB07AAA18E0FFD8007A7F50 /* FlurryIntegrationSamples-Info.plist */,
+				5BB07AAB18E0FFD8007A7F50 /* InfoPlist.strings */,
+				5BB07AAE18E0FFD8007A7F50 /* main.m */,
+				5BB07AB018E0FFD8007A7F50 /* FlurryIntegrationSamples-Prefix.pch */,
+				5BB07AF718E107DE007A7F50 /* ApplicationList.plist */,
+				5B965AEA18E23CDC00FB2166 /* TakeoverAdSpaceList.plist */,
+				5BC0BE6218FDB11B00A53EA6 /* BannerAdSpaceList.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5BB07AE218E10337007A7F50 /* Flurry */ = {
+			isa = PBXGroup;
+			children = (
+				5B4EE1EA19D4AF23000B698B /* libFlurry_5.4.0.a */,
+				5BB07AE318E10337007A7F50 /* Flurry.h */,
+			);
+			path = Flurry;
+			sourceTree = SOURCE_ROOT;
+		};
+		5BB07AE518E10337007A7F50 /* FlurryAds */ = {
+			isa = PBXGroup;
+			children = (
+				5B4EE1EC19D4AF33000B698B /* libFlurryAds_5.4.0.a */,
+				5BB07AE618E10337007A7F50 /* FlurryAdDelegate.h */,
+				5BB07AE718E10337007A7F50 /* FlurryAds.h */,
+			);
+			path = FlurryAds;
+			sourceTree = SOURCE_ROOT;
+		};
+		5BD60B7319103D81000EC575 /* FlurrySamplesCode */ = {
+			isa = PBXGroup;
+			children = (
+				5BB07AB118E0FFD8007A7F50 /* AppDelegate.h */,
+				5BB07AB218E0FFD8007A7F50 /* AppDelegate.m */,
+				5BB07AB418E0FFD8007A7F50 /* Main_iPhone.storyboard */,
+				5BB07AB718E0FFD8007A7F50 /* Main_iPad.storyboard */,
+				5BB07ABA18E0FFD8007A7F50 /* MasterViewController.h */,
+				5BB07ABB18E0FFD8007A7F50 /* MasterViewController.m */,
+				5B1728E018E6524700332F7E /* BannerViewController.h */,
+				5B1728E118E6524700332F7E /* BannerViewController.m */,
+				5BB07ABD18E0FFD8007A7F50 /* TakeoverViewController.h */,
+				5BB07ABE18E0FFD8007A7F50 /* TakeoverViewController.m */,
+			);
+			name = FlurrySamplesCode;
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5BB07A9E18E0FFD8007A7F50 /* FlurryIntegrationSamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5BB07AD718E0FFD8007A7F50 /* Build configuration list for PBXNativeTarget "FlurryIntegrationSamples" */;
+			buildPhases = (
+				5BB07A9B18E0FFD8007A7F50 /* Sources */,
+				5BB07A9C18E0FFD8007A7F50 /* Frameworks */,
+				5BB07A9D18E0FFD8007A7F50 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlurryIntegrationSamples;
+			productName = FlurryFlow;
+			productReference = 5BB07A9F18E0FFD8007A7F50 /* FlurryIntegrationSamples.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5BB07A9718E0FFD8007A7F50 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Flurry;
+				TargetAttributes = {
+					5BB07A9E18E0FFD8007A7F50 = {
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 5BB07A9A18E0FFD8007A7F50 /* Build configuration list for PBXProject "FlurryIntegrationSamples" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5BB07A9618E0FFD8007A7F50;
+			productRefGroup = 5BB07AA018E0FFD8007A7F50 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5BB07A9E18E0FFD8007A7F50 /* FlurryIntegrationSamples */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5BB07A9D18E0FFD8007A7F50 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB07AF818E107DE007A7F50 /* ApplicationList.plist in Resources */,
+				5B965AEB18E23CDC00FB2166 /* TakeoverAdSpaceList.plist in Resources */,
+				5B965B0018E2605F00FB2166 /* flurry-demo-landscape.png in Resources */,
+				5B965B0218E2605F00FB2166 /* flurry-splash-landscape-4s.png in Resources */,
+				5BB07AB918E0FFD8007A7F50 /* Main_iPad.storyboard in Resources */,
+				5B965AFF18E2605F00FB2166 /* flurry-demo-landscape-4s.png in Resources */,
+				5B965B0818E2605F00FB2166 /* flurryicon.png in Resources */,
+				5B965AFE18E2605F00FB2166 /* Default~iphone.png in Resources */,
+				5B965AFC18E2605F00FB2166 /* Default.png in Resources */,
+				5B965AFD18E2605F00FB2166 /* Default~ipad.png in Resources */,
+				5B965B0318E2605F00FB2166 /* flurry-splash-landscape.png in Resources */,
+				5BB07AC118E0FFD8007A7F50 /* Images.xcassets in Resources */,
+				5B965B0618E2605F00FB2166 /* flurry-splash-portrait.png in Resources */,
+				5BB07AB618E0FFD8007A7F50 /* Main_iPhone.storyboard in Resources */,
+				5B965B0718E2605F00FB2166 /* flurry-splash-portrait768.png in Resources */,
+				5B965B0518E2605F00FB2166 /* flurry-splash-portrait-4s.png in Resources */,
+				5B965B0418E2605F00FB2166 /* flurry-splash-landscape1024.png in Resources */,
+				5B965B0118E2605F00FB2166 /* flurry-demo768-1024.png in Resources */,
+				5BB07AAD18E0FFD8007A7F50 /* InfoPlist.strings in Resources */,
+				5BC0BE6318FDB11B00A53EA6 /* BannerAdSpaceList.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5BB07A9B18E0FFD8007A7F50 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5BB07AB318E0FFD8007A7F50 /* AppDelegate.m in Sources */,
+				5BB07ABC18E0FFD8007A7F50 /* MasterViewController.m in Sources */,
+				5BB07AAF18E0FFD8007A7F50 /* main.m in Sources */,
+				5BB07ABF18E0FFD8007A7F50 /* TakeoverViewController.m in Sources */,
+				5B1728E318E6524700332F7E /* BannerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		5BB07AAB18E0FFD8007A7F50 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BB07AAC18E0FFD8007A7F50 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		5BB07AB418E0FFD8007A7F50 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BB07AB518E0FFD8007A7F50 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			path = FlurryFlow;
+			sourceTree = "<group>";
+		};
+		5BB07AB718E0FFD8007A7F50 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5BB07AB818E0FFD8007A7F50 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			path = FlurryFlow;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5BB07AD518E0FFD8007A7F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5BB07AD618E0FFD8007A7F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5BB07AD818E0FFD8007A7F50 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlurryFlow/FlurryIntegrationSamples-Prefix.pch";
+				INFOPLIST_FILE = "FlurryFlow/FlurryIntegrationSamples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flurry",
+					"$(PROJECT_DIR)/FlurryAds",
+				);
+				PRODUCT_NAME = FlurryIntegrationSamples;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		5BB07AD918E0FFD8007A7F50 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlurryFlow/FlurryIntegrationSamples-Prefix.pch";
+				INFOPLIST_FILE = "FlurryFlow/FlurryIntegrationSamples-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flurry",
+					"$(PROJECT_DIR)/FlurryAds",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = FlurryIntegrationSamples;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BB07A9A18E0FFD8007A7F50 /* Build configuration list for PBXProject "FlurryIntegrationSamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB07AD518E0FFD8007A7F50 /* Debug */,
+				5BB07AD618E0FFD8007A7F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5BB07AD718E0FFD8007A7F50 /* Build configuration list for PBXNativeTarget "FlurryIntegrationSamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5BB07AD818E0FFD8007A7F50 /* Debug */,
+				5BB07AD918E0FFD8007A7F50 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5BB07A9718E0FFD8007A7F50 /* Project object */;
+}

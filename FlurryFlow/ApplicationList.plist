@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>App3</key>
+	<dict>
+		<key>AppName</key>
+		<string>RTB.com</string>
+		<key>APIKey</key>
+		<string>KQ469T9PZ57DKBQ8BBNP</string>
+	</dict>
+	<key>App2</key>
+	<dict>
+		<key>APIKey</key>
+		<string>D2FR2C48CZCY4R5V36NN</string>
+		<key>AppName</key>
+		<string>Drawbridge</string>
+	</dict>
+	<key>App1</key>
+	<dict>
+		<key>AppName</key>
+		<string>AppCircle Bidder</string>
+		<key>APIKey</key>
+		<string>44FQBXTN96RNKPDNJX4Q</string>
+	</dict>
+</dict>
+</plist>
