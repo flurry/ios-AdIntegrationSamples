@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="166" id="AZx-Bp-x3m" customClass="StreamCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AZx-Bp-x3m" id="M4d-Im-A5w">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmL-aO-OO6">
+                        <rect key="frame" x="8" y="4" width="304" height="158"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cUq-AT-Igo">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUSINESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-fs-XR2">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.68576203733246455" blue="0.16351306029563872" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="6cp-fs-XR2" secondAttribute="bottom" id="1v3-g9-VgN"/>
+                                    <constraint firstAttribute="height" constant="30" id="FVX-3x-55r"/>
+                                    <constraint firstItem="6cp-fs-XR2" firstAttribute="leading" secondItem="cUq-AT-Igo" secondAttribute="leading" id="VYf-Pz-Rak"/>
+                                    <constraint firstAttribute="width" constant="90" id="Zmr-GM-Wcf"/>
+                                    <constraint firstAttribute="trailing" secondItem="6cp-fs-XR2" secondAttribute="trailing" id="sk2-yG-lS8"/>
+                                    <constraint firstItem="6cp-fs-XR2" firstAttribute="top" secondItem="cUq-AT-Igo" secondAttribute="top" id="ymh-GB-7d7"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkK-cz-L4m">
+                                <rect key="frame" x="0.0" y="0.0" width="304" height="3"/>
+                                <color key="backgroundColor" red="1" green="0.68576203729999996" blue="0.16351306030000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="3" id="Q5n-hn-bMn"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-Hk-3v2">
+                                <rect key="frame" x="276" y="8" width="20" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="euE-Bp-5Ce"/>
+                                    <constraint firstAttribute="width" constant="20" id="gcl-Hb-AM5"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Icon-76.png" translatesAutoresizingMaskIntoConstraints="NO" id="uK1-s0-J2G">
+                                <rect key="frame" x="1" y="38" width="90" height="90"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="YsA-zU-qPA"/>
+                                    <constraint firstAttribute="height" constant="90" id="ke6-3y-bha"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grand Canyon officials investigate squirrel-kicking video." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1N-Ua-yNH">
+                                <rect key="frame" x="98" y="38" width="198" height="47"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOz-Rw-nVH">
+                                <rect key="frame" x="98" y="92" width="198" height="58"/>
+                                <string key="text">Authorities are looking into a viral Internet video that shows a man kicking a squirrel off what appears to be the edge of the Grand Canyon.</string>
+                                <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="RkA-Hk-3v2" firstAttribute="top" secondItem="GkK-cz-L4m" secondAttribute="bottom" constant="5" id="4Wc-vO-aHu"/>
+                            <constraint firstItem="cUq-AT-Igo" firstAttribute="leading" secondItem="gmL-aO-OO6" secondAttribute="leading" id="9zn-Sh-RS5"/>
+                            <constraint firstItem="cUq-AT-Igo" firstAttribute="top" secondItem="gmL-aO-OO6" secondAttribute="top" id="AYj-qw-JL7"/>
+                            <constraint firstItem="GkK-cz-L4m" firstAttribute="top" secondItem="gmL-aO-OO6" secondAttribute="top" id="FcS-wI-Xrq"/>
+                            <constraint firstItem="l1N-Ua-yNH" firstAttribute="leading" secondItem="uK1-s0-J2G" secondAttribute="trailing" constant="8" id="PyT-aI-7QT"/>
+                            <constraint firstItem="l1N-Ua-yNH" firstAttribute="top" secondItem="RkA-Hk-3v2" secondAttribute="bottom" constant="5" id="TON-WW-xvD"/>
+                            <constraint firstAttribute="trailing" secondItem="RkA-Hk-3v2" secondAttribute="trailing" constant="8" id="bOa-Nb-Eij"/>
+                            <constraint firstItem="ZOz-Rw-nVH" firstAttribute="leading" secondItem="uK1-s0-J2G" secondAttribute="trailing" constant="8" id="cDG-jP-YNx"/>
+                            <constraint firstAttribute="trailing" secondItem="GkK-cz-L4m" secondAttribute="trailing" id="gfi-tZ-8aW"/>
+                            <constraint firstItem="ZOz-Rw-nVH" firstAttribute="top" secondItem="l1N-Ua-yNH" secondAttribute="bottom" constant="8" id="hZD-Tl-mDr"/>
+                            <constraint firstAttribute="trailing" secondItem="ZOz-Rw-nVH" secondAttribute="trailing" constant="8" id="hab-qE-90A"/>
+                            <constraint firstAttribute="trailing" secondItem="l1N-Ua-yNH" secondAttribute="trailing" constant="8" id="pWY-b8-HLs"/>
+                            <constraint firstItem="uK1-s0-J2G" firstAttribute="top" secondItem="cUq-AT-Igo" secondAttribute="bottom" constant="8" id="t9F-zq-zRY"/>
+                            <constraint firstItem="uK1-s0-J2G" firstAttribute="leading" secondItem="gmL-aO-OO6" secondAttribute="leading" id="tUe-AG-ayX"/>
+                            <constraint firstItem="GkK-cz-L4m" firstAttribute="leading" secondItem="gmL-aO-OO6" secondAttribute="leading" id="wsy-jq-CyH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="gmL-aO-OO6" secondAttribute="trailing" constant="8" id="0iF-ev-dTE"/>
+                    <constraint firstItem="gmL-aO-OO6" firstAttribute="top" secondItem="M4d-Im-A5w" secondAttribute="top" constant="4" id="Gpr-zq-XMY"/>
+                    <constraint firstAttribute="bottom" secondItem="gmL-aO-OO6" secondAttribute="bottom" constant="4" id="flT-IK-V5a"/>
+                    <constraint firstItem="gmL-aO-OO6" firstAttribute="leading" secondItem="M4d-Im-A5w" secondAttribute="leading" constant="8" id="jFC-ZY-B6G"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="containerView" destination="gmL-aO-OO6" id="ume-ng-Yl0"/>
+                <outlet property="newsCategoryLabel" destination="6cp-fs-XR2" id="8A9-4P-DwA"/>
+                <outlet property="newsDescriptionLabel" destination="ZOz-Rw-nVH" id="ew5-fX-Lnd"/>
+                <outlet property="newsImageView" destination="uK1-s0-J2G" id="HY5-Wr-44W"/>
+                <outlet property="newsTitleLabel" destination="l1N-Ua-yNH" id="VRp-ft-b7K"/>
+                <outlet property="topColorView1" destination="cUq-AT-Igo" id="t67-bS-rqL"/>
+                <outlet property="topColorView2" destination="GkK-cz-L4m" id="Ihv-dc-BUq"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="341"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Icon-76.png" width="76" height="76"/>
+        <image name="share_icon.png" width="29" height="36"/>
+    </resources>
+</document>
