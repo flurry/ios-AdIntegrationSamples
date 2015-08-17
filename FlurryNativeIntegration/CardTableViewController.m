@@ -173,11 +173,11 @@ static const int SECTION_SKIP = 3;
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     NewsItem *newsItem = [self.newsItems objectAtIndex:[self contentIndexForIndexPathRow:indexPath.row]];
-        if (self.newsDetail == nil) {
-            self.newsDetail = [[NewsDetailViewController alloc] initWithNibName:@"NewsDetailViewController" bundle:nil];
-        }
-        self.newsDetail.newsItem = newsItem;
-        [self.navigationController pushViewController:self.newsDetail animated:YES];
+    if (self.newsDetail == nil) {
+        self.newsDetail = [[NewsDetailViewController alloc] initWithNibName:@"NewsDetailViewController" bundle:nil];
+    }
+    self.newsDetail.newsItem = newsItem;
+    [self.navigationController pushViewController:self.newsDetail animated:YES];
 }
 
 #pragma mark - ad helper routines
