@@ -7,6 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24135A421B8284DE00B9F132 /* libFlurryAds_6.7.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A411B8284DE00B9F132 /* libFlurryAds_6.7.0.a */; };
+		24135A441B8284E700B9F132 /* libFlurry_6.7.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A431B8284E700B9F132 /* libFlurry_6.7.0.a */; };
+		24135A4F1B82852000B9F132 /* CardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24135A461B82852000B9F132 /* CardCell.m */; };
+		24135A501B82852000B9F132 /* CardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24135A471B82852000B9F132 /* CardCell.xib */; };
+		24135A511B82852000B9F132 /* CardLandscapeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24135A481B82852000B9F132 /* CardLandscapeCell.xib */; };
+		24135A521B82852000B9F132 /* CardTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24135A4A1B82852000B9F132 /* CardTableViewController.m */; };
+		24135A531B82852000B9F132 /* FlurryCardCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 24135A4C1B82852000B9F132 /* FlurryCardCell.m */; };
+		24135A541B82852000B9F132 /* FlurryCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24135A4D1B82852000B9F132 /* FlurryCardCell.xib */; };
+		24135A551B82852000B9F132 /* FlurryCardLandscapeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24135A4E1B82852000B9F132 /* FlurryCardLandscapeCell.xib */; };
+		24135A581B82861900B9F132 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24135A571B82861900B9F132 /* SWRevealViewController.m */; };
+		24135A5B1B82865700B9F132 /* GeminiDemoConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 24135A5A1B82865700B9F132 /* GeminiDemoConfiguration.m */; };
+		24135A5D1B8286A400B9F132 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A5C1B8286A400B9F132 /* AVKit.framework */; };
+		24135A5F1B8286E700B9F132 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A5E1B8286E700B9F132 /* CoreMedia.framework */; };
+		24135A611B8286FB00B9F132 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A601B8286FB00B9F132 /* AVFoundation.framework */; };
+		24135A631B828B0400B9F132 /* GeminiDemoConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24135A621B828B0400B9F132 /* GeminiDemoConfiguration.plist */; };
 		5B37B0561AD3A57B0087263F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B0541AD3A57B0087263F /* InfoPlist.strings */; };
 		5B37B06B1AD4F4C10087263F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B05D1AD4F4C00087263F /* Default-568h@2x.png */; };
 		5B37B06C1AD4F4C10087263F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B05E1AD4F4C00087263F /* Default.png */; };
@@ -74,11 +89,29 @@
 		5BB07AF018E1051F007A7F50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AEF18E1051F007A7F50 /* Security.framework */; };
 		5BB07AF418E1053C007A7F50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AF318E1053C007A7F50 /* SystemConfiguration.framework */; };
 		5BB07AF618E1054A007A7F50 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AF518E1054A007A7F50 /* libz.dylib */; };
-		EC9B91061B32557800FE13B1 /* libFlurry_6.5.1.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9B91051B32557800FE13B1 /* libFlurry_6.5.1.a */; };
-		EC9B91081B3256E100FE13B1 /* libFlurryAds_6.5.0.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EC9B91071B3256E100FE13B1 /* libFlurryAds_6.5.0.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24135A411B8284DE00B9F132 /* libFlurryAds_6.7.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurryAds_6.7.0.a; path = FlurryAds/libFlurryAds_6.7.0.a; sourceTree = "<group>"; };
+		24135A431B8284E700B9F132 /* libFlurry_6.7.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_6.7.0.a; path = Flurry/libFlurry_6.7.0.a; sourceTree = "<group>"; };
+		24135A451B82852000B9F132 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCell.h; path = FlurryNativeIntegration/CardCell.h; sourceTree = "<group>"; };
+		24135A461B82852000B9F132 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCell.m; path = FlurryNativeIntegration/CardCell.m; sourceTree = "<group>"; };
+		24135A471B82852000B9F132 /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardCell.xib; path = FlurryNativeIntegration/CardCell.xib; sourceTree = "<group>"; };
+		24135A481B82852000B9F132 /* CardLandscapeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardLandscapeCell.xib; path = FlurryNativeIntegration/CardLandscapeCell.xib; sourceTree = "<group>"; };
+		24135A491B82852000B9F132 /* CardTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardTableViewController.h; path = FlurryNativeIntegration/CardTableViewController.h; sourceTree = "<group>"; };
+		24135A4A1B82852000B9F132 /* CardTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardTableViewController.m; path = FlurryNativeIntegration/CardTableViewController.m; sourceTree = "<group>"; };
+		24135A4B1B82852000B9F132 /* FlurryCardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FlurryCardCell.h; path = FlurryNativeIntegration/FlurryCardCell.h; sourceTree = "<group>"; };
+		24135A4C1B82852000B9F132 /* FlurryCardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FlurryCardCell.m; path = FlurryNativeIntegration/FlurryCardCell.m; sourceTree = "<group>"; };
+		24135A4D1B82852000B9F132 /* FlurryCardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FlurryCardCell.xib; path = FlurryNativeIntegration/FlurryCardCell.xib; sourceTree = "<group>"; };
+		24135A4E1B82852000B9F132 /* FlurryCardLandscapeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = FlurryCardLandscapeCell.xib; path = FlurryNativeIntegration/FlurryCardLandscapeCell.xib; sourceTree = "<group>"; };
+		24135A561B82861900B9F132 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SWRevealViewController.h; path = FlurryNativeIntegration/SWRevealViewController/SWRevealViewController/SWRevealViewController.h; sourceTree = "<group>"; };
+		24135A571B82861900B9F132 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SWRevealViewController.m; path = FlurryNativeIntegration/SWRevealViewController/SWRevealViewController/SWRevealViewController.m; sourceTree = "<group>"; };
+		24135A591B82865700B9F132 /* GeminiDemoConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GeminiDemoConfiguration.h; path = FlurryNativeIntegration/GeminiDemoConfiguration.h; sourceTree = "<group>"; };
+		24135A5A1B82865700B9F132 /* GeminiDemoConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GeminiDemoConfiguration.m; path = FlurryNativeIntegration/GeminiDemoConfiguration.m; sourceTree = "<group>"; };
+		24135A5C1B8286A400B9F132 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		24135A5E1B8286E700B9F132 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		24135A601B8286FB00B9F132 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		24135A621B828B0400B9F132 /* GeminiDemoConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = GeminiDemoConfiguration.plist; path = FlurryNativeIntegration/GeminiDemoConfiguration.plist; sourceTree = "<group>"; };
 		5B09DF171A6D989000B4CC2C /* FlurryAdBanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdBanner.h; sourceTree = "<group>"; };
 		5B09DF181A6D989000B4CC2C /* FlurryAdBannerDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdBannerDelegate.h; sourceTree = "<group>"; };
 		5B09DF1A1A6D989000B4CC2C /* FlurryAdInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdInterstitial.h; sourceTree = "<group>"; };
@@ -183,8 +216,6 @@
 		5BF3E13C1A9C0365005DF302 /* FlurryAdNativeAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdNativeAsset.h; sourceTree = "<group>"; };
 		5BF3E13D1A9C0365005DF302 /* FlurryAdNativeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdNativeDelegate.h; sourceTree = "<group>"; };
 		5BF3E13E1A9C0365005DF302 /* FlurryAdNativeStyle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdNativeStyle.h; sourceTree = "<group>"; };
-		EC9B91051B32557800FE13B1 /* libFlurry_6.5.1.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_6.5.1.a; path = Flurry/libFlurry_6.5.1.a; sourceTree = "<group>"; };
-		EC9B91071B3256E100FE13B1 /* libFlurryAds_6.5.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurryAds_6.5.0.a; path = FlurryAds/libFlurryAds_6.5.0.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,17 +223,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24135A611B8286FB00B9F132 /* AVFoundation.framework in Frameworks */,
+				24135A5F1B8286E700B9F132 /* CoreMedia.framework in Frameworks */,
+				24135A5D1B8286A400B9F132 /* AVKit.framework in Frameworks */,
+				24135A421B8284DE00B9F132 /* libFlurryAds_6.7.0.a in Frameworks */,
 				5BB07AEC18E10505007A7F50 /* AdSupport.framework in Frameworks */,
 				5BB07AA518E0FFD8007A7F50 /* CoreGraphics.framework in Frameworks */,
 				5BB07AA318E0FFD8007A7F50 /* Foundation.framework in Frameworks */,
 				5BB07AF618E1054A007A7F50 /* libz.dylib in Frameworks */,
 				5BB07AEE18E10516007A7F50 /* MediaPlayer.framework in Frameworks */,
 				5BB07AF418E1053C007A7F50 /* SystemConfiguration.framework in Frameworks */,
-				EC9B91081B3256E100FE13B1 /* libFlurryAds_6.5.0.a in Frameworks */,
 				5BB07AF018E1051F007A7F50 /* Security.framework in Frameworks */,
 				5B4EE1EF19D4AFFD000B698B /* StoreKit.framework in Frameworks */,
 				5BB07AA718E0FFD8007A7F50 /* UIKit.framework in Frameworks */,
-				EC9B91061B32557800FE13B1 /* libFlurry_6.5.1.a in Frameworks */,
+				24135A441B8284E700B9F132 /* libFlurry_6.7.0.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -248,6 +282,21 @@
 		5B37B0571AD489E60087263F /* FlurryNativeIntegration */ = {
 			isa = PBXGroup;
 			children = (
+				24135A621B828B0400B9F132 /* GeminiDemoConfiguration.plist */,
+				24135A591B82865700B9F132 /* GeminiDemoConfiguration.h */,
+				24135A5A1B82865700B9F132 /* GeminiDemoConfiguration.m */,
+				24135A561B82861900B9F132 /* SWRevealViewController.h */,
+				24135A571B82861900B9F132 /* SWRevealViewController.m */,
+				24135A451B82852000B9F132 /* CardCell.h */,
+				24135A461B82852000B9F132 /* CardCell.m */,
+				24135A471B82852000B9F132 /* CardCell.xib */,
+				24135A481B82852000B9F132 /* CardLandscapeCell.xib */,
+				24135A491B82852000B9F132 /* CardTableViewController.h */,
+				24135A4A1B82852000B9F132 /* CardTableViewController.m */,
+				24135A4B1B82852000B9F132 /* FlurryCardCell.h */,
+				24135A4C1B82852000B9F132 /* FlurryCardCell.m */,
+				24135A4D1B82852000B9F132 /* FlurryCardCell.xib */,
+				24135A4E1B82852000B9F132 /* FlurryCardLandscapeCell.xib */,
 				5B74B7A61AD3A2DE003A5C05 /* Utils.m */,
 				5B74B7A71AD3A2DE003A5C05 /* Utils.h */,
 				5B74B7A81AD3A2DE003A5C05 /* StreamTableViewController.m */,
@@ -339,8 +388,8 @@
 		5BB07A9618E0FFD8007A7F50 = {
 			isa = PBXGroup;
 			children = (
-				EC9B91071B3256E100FE13B1 /* libFlurryAds_6.5.0.a */,
-				EC9B91051B32557800FE13B1 /* libFlurry_6.5.1.a */,
+				24135A431B8284E700B9F132 /* libFlurry_6.7.0.a */,
+				24135A411B8284DE00B9F132 /* libFlurryAds_6.7.0.a */,
 				5B37B07D1AD749330087263F /* images */,
 				5B74B72C1AD39342003A5C05 /* Main_iPad.storyboard */,
 				5B74B72E1AD39342003A5C05 /* Main_iPhone.storyboard */,
@@ -362,6 +411,9 @@
 		5BB07AA118E0FFD8007A7F50 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				24135A601B8286FB00B9F132 /* AVFoundation.framework */,
+				24135A5E1B8286E700B9F132 /* CoreMedia.framework */,
+				24135A5C1B8286A400B9F132 /* AVKit.framework */,
 				5B4EE1EE19D4AFFD000B698B /* StoreKit.framework */,
 				5BB07AF518E1054A007A7F50 /* libz.dylib */,
 				5BB07AF318E1053C007A7F50 /* SystemConfiguration.framework */,
@@ -521,6 +573,8 @@
 				5B74B7D51AD3A2DE003A5C05 /* Icon-72.png in Resources */,
 				5B74B7CA1AD3A2DE003A5C05 /* share_icon@2x.png in Resources */,
 				5B37B0781AD4F4C10087263F /* flurryicon.png in Resources */,
+				24135A551B82852000B9F132 /* FlurryCardLandscapeCell.xib in Resources */,
+				24135A501B82852000B9F132 /* CardCell.xib in Resources */,
 				5B74B7341AD39342003A5C05 /* Images.xcassets in Resources */,
 				5B37B06C1AD4F4C10087263F /* Default.png in Resources */,
 				5B37B06F1AD4F4C10087263F /* flurry-demo-landscape-4s.png in Resources */,
@@ -537,15 +591,18 @@
 				5B74B7D41AD3A2DE003A5C05 /* Icon-72@2x.png in Resources */,
 				5B74B7311AD39342003A5C05 /* TakeoverAdSpaceList.plist in Resources */,
 				5B37B0711AD4F4C10087263F /* flurry-demo768-1024.png in Resources */,
+				24135A631B828B0400B9F132 /* GeminiDemoConfiguration.plist in Resources */,
 				5B74B7D71AD3A2DE003A5C05 /* FlurryStreamCell.xib in Resources */,
 				5B74B7CB1AD3A2DE003A5C05 /* share_icon.png in Resources */,
 				5B74B7CD1AD3A2DE003A5C05 /* NewsDetailViewController.xib in Resources */,
+				24135A511B82852000B9F132 /* CardLandscapeCell.xib in Resources */,
 				5B74B7CF1AD3A2DE003A5C05 /* Icon@2x.png in Resources */,
 				5B74B7321AD39342003A5C05 /* StreamAdSpaceList.plist in Resources */,
 				5B74B7D31AD3A2DE003A5C05 /* Icon-76.png in Resources */,
 				5B37B0721AD4F4C10087263F /* flurry-splash-landscape-4s.png in Resources */,
 				5B74B7351AD39342003A5C05 /* FlurryIntegrationSample-Info.plist in Resources */,
 				5B74B7D21AD3A2DE003A5C05 /* Icon-76@2x.png in Resources */,
+				24135A541B82852000B9F132 /* FlurryCardCell.xib in Resources */,
 				5B37B0741AD4F4C10087263F /* flurry-splash-landscape1024.png in Resources */,
 				5B37B0751AD4F4C10087263F /* flurry-splash-portrait-4s.png in Resources */,
 				5B37B0701AD4F4C10087263F /* flurry-demo-landscape.png in Resources */,
@@ -565,18 +622,23 @@
 				5B74B7EF1AD3A30E003A5C05 /* AFURLConnectionOperation.m in Sources */,
 				5B74B7331AD39342003A5C05 /* main.m in Sources */,
 				5B74B7F41AD3A30E003A5C05 /* AFHTTPRequestOperation.m in Sources */,
+				24135A521B82852000B9F132 /* CardTableViewController.m in Sources */,
+				24135A531B82852000B9F132 /* FlurryCardCell.m in Sources */,
 				5B74B7A31AD3A2B4003A5C05 /* MasterViewController.m in Sources */,
 				5B74B7A41AD3A2B4003A5C05 /* BannerViewController.m in Sources */,
+				24135A5B1B82865700B9F132 /* GeminiDemoConfiguration.m in Sources */,
 				5B74B7F11AD3A30E003A5C05 /* AFNetworkActivityIndicatorManager.m in Sources */,
 				5B74B7EE1AD3A30E003A5C05 /* AFXMLRequestOperation.m in Sources */,
 				5B74B7F31AD3A30E003A5C05 /* AFImageRequestOperation.m in Sources */,
 				5B74B7C61AD3A2DE003A5C05 /* StreamCell.m in Sources */,
+				24135A581B82861900B9F132 /* SWRevealViewController.m in Sources */,
 				5B74B7C31AD3A2DE003A5C05 /* Utils.m in Sources */,
 				5B74B7D81AD3A2DE003A5C05 /* FlurryStreamCell.m in Sources */,
 				5B74B7F01AD3A30E003A5C05 /* AFPropertyListRequestOperation.m in Sources */,
 				5B74B7A21AD3A2B4003A5C05 /* TakeoverViewController.m in Sources */,
 				5B74B7ED1AD3A30E003A5C05 /* UIImageView+AFNetworking.m in Sources */,
 				5B74B7CE1AD3A2DE003A5C05 /* NewsDetailViewController.m in Sources */,
+				24135A4F1B82852000B9F132 /* CardCell.m in Sources */,
 				5B74B7F51AD3A30E003A5C05 /* AFHTTPClient.m in Sources */,
 				5B74B7CC1AD3A2DE003A5C05 /* NewsItem.m in Sources */,
 				5B74B7F21AD3A30E003A5C05 /* AFJSONRequestOperation.m in Sources */,
