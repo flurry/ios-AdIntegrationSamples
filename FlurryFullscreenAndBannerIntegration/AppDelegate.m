@@ -27,6 +27,8 @@
     
     [Flurry startSession: apiKEY];//@"6Z27CWHJXRC29QVJZX4R"];//
     
+    //enabling test mode to see video ads, remove this line if you dont want to see test ads.
+    [FlurryAds enableTestAds:YES];
     
     //to enable Flurry logging uncomment the following two lines
     [Flurry setDebugLogEnabled:YES];
