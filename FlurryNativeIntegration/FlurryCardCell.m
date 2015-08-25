@@ -17,6 +17,7 @@ static int widthForNonText = 32;
 
 @interface FlurryCardCell ()
 
+@property (weak, nonatomic) IBOutlet UIButton *CallToActionButton;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *cardTitleLabel;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *cardSummaryLabel;
 
@@ -26,6 +27,13 @@ static int widthForNonText = 32;
 
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *cardSquareImageView;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *cardRectangleImageView;
+
+@property (unsafe_unretained, nonatomic) IBOutlet UILabel *appCategoryLabel;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *ratingImageView;
+
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *CTASquareImageButton;
+@property (unsafe_unretained, nonatomic) IBOutlet UIButton *CTARectangleImageButton;
+
 
 @property (nonatomic, retain) FlurryAdNative* ad;
 @property (weak, nonatomic) IBOutlet UIView *cardSquareVideoViewContainer;
@@ -57,6 +65,12 @@ static int widthForNonText = 32;
     [super setSelected:selected animated:animated];
 }
 
+- (void)resetFlurryNativeAd
+{
+    // To avoid leak in native ad object.
+    self.ad.adDelegate = nil;
+    self.ad = nil;
+}
 
 - (void)setupWithFlurryNativeAd:(FlurryAdNative*)adNative atPosition:(NSInteger)position
 {
@@ -80,11 +94,16 @@ static int widthForNonText = 32;
     
     NSString *hqImage = nil;
     NSString *origImage = nil;
+    NSString *ratingHqImage = nil;
+    NSString *ratingImage = nil;
+    NSString *appCategory = nil;
+    NSString *callToActionTxt = nil;
     
     for (int ix = 0; ix < adNative.assetList.count; ++ix) {
         FlurryAdNativeAsset* asset = [adNative.assetList objectAtIndex:ix];
         if ([asset.name isEqualToString:@"headline"]) {
             self.cardTitleLabel.text = asset.value;
+            NSLog(@"Headline = %@",asset.value );
         }
         
         if ([asset.name isEqualToString:@"secOrigImg"]) {
@@ -103,21 +122,44 @@ static int widthForNonText = 32;
             self.cardSourceLabel.text = asset.value;
         }
         
-        if ([asset.name isEqualToString:@"headline"]) {
-            self.cardTitleLabel.text = asset.value;
+        if ([asset.name isEqualToString:@"secHqRatingImg"]) {
+            ratingHqImage = asset.value;
+        }
+        
+        if ([asset.name isEqualToString:@"secRatingImg"]) {
+            ratingImage = asset.value;
+        }
+        
+        if ([asset.name isEqualToString:@"appCategory"]) {
+            appCategory = asset.value;
+        }
+        
+        if ([asset.name isEqualToString:@"appRating"]) {
+            //Use if required
+        }
+        
+        if ([asset.name isEqualToString:@"callToAction"]) {
+            callToActionTxt = asset.value;
         }
     }
+    
     self.cardSponsoredLabel.text = @"SPONSORED";
     
     if ([adNative isVideoAd]) {
         if (hqImage) {
-            adNative.videoViewContainer =  self.cardRectangleVideoViewContainer;
+            if (self.ad.isVideoAd)
+            {
+                adNative.videoViewContainer =  self.cardRectangleVideoViewContainer;
+            }
             self.cardSquareVideoViewContainer.hidden = YES;
             self.cardRectangleVideoViewContainer.hidden = NO;
         }
         else
         {
-            adNative.videoViewContainer =  self.cardSquareVideoViewContainer;
+            if (self.ad.isVideoAd)
+            {
+                adNative.videoViewContainer =  self.cardSquareVideoViewContainer;
+            }
             self.cardSquareVideoViewContainer.hidden = NO;
             self.cardRectangleVideoViewContainer.hidden = YES;
         }
@@ -138,6 +180,62 @@ static int widthForNonText = 32;
         self.cardRectangleVideoViewContainer.hidden = YES;
         self.cardSquareVideoViewContainer.hidden = YES;
         [self.cardSquareImageView setImageWithURL:[NSURL URLWithString:origImage] placeholderImage:[UIImage imageNamed:@"streamImage"]];
+    }
+    
+    if (ratingHqImage) {
+        self.ratingImageView.hidden = NO;
+        self.appCategoryLabel.hidden = YES;
+        [self.ratingImageView setImageWithURL:[NSURL URLWithString:ratingHqImage] placeholderImage:nil];
+    }
+    else if(ratingImage) {
+        self.ratingImageView.hidden = NO;
+        self.appCategoryLabel.hidden = YES;
+        [self.ratingImageView setImageWithURL:[NSURL URLWithString:ratingImage] placeholderImage:nil];
+    }
+    else
+    {
+        self.ratingImageView.hidden = YES;
+        if (appCategory) {
+            self.appCategoryLabel.hidden = NO;
+            [self.appCategoryLabel setText:appCategory];
+        }
+        else
+        {
+            self.appCategoryLabel.hidden = YES;
+        }
+    }
+    
+    if ([adNative isVideoAd])
+    {
+        self.CTARectangleImageButton.hidden = YES;
+        self.CTASquareImageButton.hidden = YES;
+        self.CallToActionButton.hidden = NO;
+        self.CallToActionButton.layer.cornerRadius = 5;
+        self.CallToActionButton.backgroundColor = [Utils colorForPosition:position];
+        [self.CallToActionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.CallToActionButton setTitle:callToActionTxt forState:UIControlStateNormal];
+    }
+    else if (callToActionTxt && hqImage) {
+        self.CTARectangleImageButton.hidden = NO;
+        self.CTASquareImageButton.hidden = YES;
+        self.CTARectangleImageButton.layer.cornerRadius = 5;
+        self.CTARectangleImageButton.backgroundColor = [Utils colorForPosition:position];
+        [self.CTARectangleImageButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.CTARectangleImageButton setTitle:callToActionTxt forState:UIControlStateNormal];
+    }
+    else if (callToActionTxt && origImage)
+    {
+        self.CTASquareImageButton.hidden = NO;
+        self.CTARectangleImageButton.hidden = YES;
+        self.CTASquareImageButton.layer.cornerRadius = 5;
+        self.CTASquareImageButton.backgroundColor = [Utils colorForPosition:position];
+        [self.CTASquareImageButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self.CTASquareImageButton setTitle:callToActionTxt forState:UIControlStateNormal];
+    }
+    else
+    {
+        self.CTARectangleImageButton.hidden = YES;
+        self.CTASquareImageButton.hidden = YES;
     }
     
     [self.sponseredImageView setImage:[UIImage imageNamed:@"icn_sponsored_dense"]];
@@ -211,6 +309,7 @@ static int widthForNonText = 32;
     NSString* description = nil;
     NSString *hqImage = nil;
     NSString *origImage = nil;
+    NSString *callToActionTxt = nil;
     
     for (int ix = 0; ix < ad.assetList.count; ++ix) {
         FlurryAdNativeAsset* asset = [ad.assetList objectAtIndex:ix];
@@ -225,6 +324,9 @@ static int widthForNonText = 32;
         }
         if ([asset.name isEqualToString:@"secHqImage"]) {
             hqImage = asset.value;
+        }
+        if ([asset.name isEqualToString:@"callToAction"]) {
+            callToActionTxt = asset.value;
         }
     }
     
@@ -252,8 +354,13 @@ static int widthForNonText = 32;
                                    fontName:@"Avenir-Roman"
                                    maxWidth:(bounds.width - widthForNonText)
                                   maxHeight:58];
-   
-    return outerPadding + categoryColorView + innerPadding + titleSize.height + innerPadding + summarySize.height + innerPadding + imageHeight + innerPadding + outerPadding + 20 +30 ;
+    
+    int buttonHeight = 0;
+    if (callToActionTxt && (hqImage || origImage)) {
+        buttonHeight = 30;
+    }
+    
+    return outerPadding + categoryColorView + innerPadding + titleSize.height + innerPadding + summarySize.height + innerPadding + imageHeight + innerPadding + outerPadding +buttonHeight;
 }
 
 + (CGFloat)heightForLandscape:(FlurryAdNative*)ad withBounds:(CGSize)bounds {
@@ -261,6 +368,7 @@ static int widthForNonText = 32;
     NSString* description = nil;
     NSString *hqImage = nil;
     NSString *origImage = nil;
+    NSString *callToActionTxt = nil;
     
     for (int ix = 0; ix < ad.assetList.count; ++ix) {
         FlurryAdNativeAsset* asset = [ad.assetList objectAtIndex:ix];
@@ -276,6 +384,10 @@ static int widthForNonText = 32;
         if ([asset.name isEqualToString:@"secHqImage"]) {
             hqImage = asset.value;
         }
+        
+        if ([asset.name isEqualToString:@"callToAction"]) {
+            callToActionTxt = asset.value;
+        }
     }
     
     int padding = 8;
@@ -287,6 +399,10 @@ static int widthForNonText = 32;
     int halfWidth = totalWidth / 2;
     int usableHeight = totalHeight - topColorViewHeight - padding - padding;
     
+    int buttonHeight = 0;
+    //    if (callToActionTxt && hqImage) {
+    //        buttonHeight = 30;
+    //    }
     
     // Title
     CGSize titleSize = [Utils sizeForText:headLine
@@ -313,8 +429,7 @@ static int widthForNonText = 32;
     
     int heightForText = titleSize.height + padding + summarySize.height;
     
-    return 4 + topColorViewHeight + padding + MAX(heightForText, imageHeight) + padding + 4 +15+30;
+    return 4 + topColorViewHeight + padding + MAX(heightForText, imageHeight) + padding + 4 + buttonHeight;
 }
-
 
 @end

@@ -92,8 +92,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		24135A411B8284DE00B9F132 /* libFlurryAds_6.7.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurryAds_6.7.0.a; path = FlurryAds/libFlurryAds_6.7.0.a; sourceTree = "<group>"; };
-		24135A431B8284E700B9F132 /* libFlurry_6.7.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libFlurry_6.7.0.a; path = Flurry/libFlurry_6.7.0.a; sourceTree = "<group>"; };
+		24135A411B8284DE00B9F132 /* libFlurryAds_6.7.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAds_6.7.0.a; sourceTree = "<group>"; };
+		24135A431B8284E700B9F132 /* libFlurry_6.7.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.7.0.a; sourceTree = "<group>"; };
 		24135A451B82852000B9F132 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCell.h; path = FlurryNativeIntegration/CardCell.h; sourceTree = "<group>"; };
 		24135A461B82852000B9F132 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCell.m; path = FlurryNativeIntegration/CardCell.m; sourceTree = "<group>"; };
 		24135A471B82852000B9F132 /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardCell.xib; path = FlurryNativeIntegration/CardCell.xib; sourceTree = "<group>"; };
@@ -210,8 +210,6 @@
 		5BB07AEF18E1051F007A7F50 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5BB07AF318E1053C007A7F50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5BB07AF518E1054A007A7F50 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		5BE9CEA61AD0C45D0086C75F /* libFlurryAds_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurryAds_6.3.0.a; sourceTree = "<group>"; };
-		5BE9CEA81AD0C4770086C75F /* libFlurry_6.3.0.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libFlurry_6.3.0.a; sourceTree = "<group>"; };
 		5BF3E13B1A9C0365005DF302 /* FlurryAdNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdNative.h; sourceTree = "<group>"; };
 		5BF3E13C1A9C0365005DF302 /* FlurryAdNativeAsset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdNativeAsset.h; sourceTree = "<group>"; };
 		5BF3E13D1A9C0365005DF302 /* FlurryAdNativeDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FlurryAdNativeDelegate.h; sourceTree = "<group>"; };
@@ -388,8 +386,6 @@
 		5BB07A9618E0FFD8007A7F50 = {
 			isa = PBXGroup;
 			children = (
-				24135A431B8284E700B9F132 /* libFlurry_6.7.0.a */,
-				24135A411B8284DE00B9F132 /* libFlurryAds_6.7.0.a */,
 				5B37B07D1AD749330087263F /* images */,
 				5B74B72C1AD39342003A5C05 /* Main_iPad.storyboard */,
 				5B74B72E1AD39342003A5C05 /* Main_iPhone.storyboard */,
@@ -465,7 +461,7 @@
 		5BB07AE218E10337007A7F50 /* Flurry */ = {
 			isa = PBXGroup;
 			children = (
-				5BE9CEA81AD0C4770086C75F /* libFlurry_6.3.0.a */,
+				24135A431B8284E700B9F132 /* libFlurry_6.7.0.a */,
 				5BB07AE318E10337007A7F50 /* Flurry.h */,
 			);
 			path = Flurry;
@@ -474,7 +470,7 @@
 		5BB07AE518E10337007A7F50 /* FlurryAds */ = {
 			isa = PBXGroup;
 			children = (
-				5BE9CEA61AD0C45D0086C75F /* libFlurryAds_6.3.0.a */,
+				24135A411B8284DE00B9F132 /* libFlurryAds_6.7.0.a */,
 				5BF3E13A1A9C0365005DF302 /* FlurryAdNative */,
 				5B09DF161A6D989000B4CC2C /* FlurryAdBanner */,
 				5B09DF191A6D989000B4CC2C /* FlurryAdInterstitial */,
