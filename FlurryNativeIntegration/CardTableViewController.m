@@ -207,35 +207,7 @@ static const int SECTION_SKIP = 3;
 #pragma mark - ad delegates
 
 - (void) adNativeDidFetchAd:(FlurryAdNative *)flurryAd
-{
-    
-//    BOOL assetPresent = NO;
-//    
-//    for (int ix = 0; ix < flurryAd.assetList.count; ++ix)
-//    {
-//        FlurryAdNativeAsset* asset = [flurryAd.assetList objectAtIndex:ix];
-//        if ([asset.name isEqualToString:@"secHqImage"])
-//        {
-//            assetPresent = YES;
-//            break;
-//        }
-//        
-//        if ([asset.name isEqualToString:@"secOrigImg"])
-//        {
-//            assetPresent = YES;
-//            break;
-//        }
-//    }
-//    
-//    if (assetPresent == NO)
-//    {
-//        // move this ad to the back of the ads list
-//        [self.nativeAds removeObject:flurryAd];
-//        if (self.nativeAds.count < INIT_MAX_ADS) {
-//            [self loadAds];
-//        }
-//    }
-    
+{    
     [self.tableView reloadData];
 }
 
