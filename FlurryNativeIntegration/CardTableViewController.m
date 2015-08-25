@@ -66,8 +66,6 @@ static const int SECTION_SKIP = 3;
     btn.frame = CGRectMake(0, 0, 25, 25);
     [btn addTarget:revealController action:@selector(revealToggle:) forControlEvents:UIControlEventTouchUpInside];
     [btn setImage:[UIImage imageNamed:@"hamburger_icon"] forState:UIControlStateNormal];
-    UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    self.navigationItem.leftBarButtonItem = revealButtonItem;
 }
 
 -(void) loadAds
@@ -98,9 +96,10 @@ static const int SECTION_SKIP = 3;
 
 - (void)loadNews
 {
+    self.nativeAds = [NSMutableArray array];
+    [self loadAds];
     [self.refreshControl endRefreshing];
 }
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
 }
@@ -208,35 +207,7 @@ static const int SECTION_SKIP = 3;
 #pragma mark - ad delegates
 
 - (void) adNativeDidFetchAd:(FlurryAdNative *)flurryAd
-{
-    
-    NSLog(@"=========== Native Ad for Space [%@] Did Receive Ad ================ ", flurryAd.space);
-    
-    BOOL assetPresent = NO;
-    
-    for (int ix = 0; ix < flurryAd.assetList.count; ++ix)
-    {
-        FlurryAdNativeAsset* asset = [flurryAd.assetList objectAtIndex:ix];
-        if ([asset.name isEqualToString:@"secHqImage"])
-        {
-            assetPresent = YES;
-            break;
-        }
-        
-        if ([asset.name isEqualToString:@"secOrigImg"])
-        {
-            assetPresent = YES;
-            break;
-        }
-        
-        if ([asset.name isEqualToString:@"videoUrl"])
-        {
-            assetPresent = YES;
-            break;
-        }
-        
-    }
-    
+{    
     [self.tableView reloadData];
 }
 
