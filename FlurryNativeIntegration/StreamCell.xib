@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,6 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AZx-Bp-x3m" id="M4d-Im-A5w">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gmL-aO-OO6">
@@ -20,11 +22,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUSINESS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cp-fs-XR2">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.68576203733246455" blue="0.16351306029563872" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="6cp-fs-XR2" secondAttribute="bottom" id="1v3-g9-VgN"/>
@@ -37,6 +41,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GkK-cz-L4m">
                                 <rect key="frame" x="0.0" y="0.0" width="304" height="3"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.68576203729999996" blue="0.16351306030000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="Q5n-hn-bMn"/>
@@ -44,6 +49,7 @@
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="RkA-Hk-3v2">
                                 <rect key="frame" x="276" y="8" width="20" height="25"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="euE-Bp-5Ce"/>
                                     <constraint firstAttribute="width" constant="20" id="gcl-Hb-AM5"/>
@@ -51,6 +57,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Icon-76.png" translatesAutoresizingMaskIntoConstraints="NO" id="uK1-s0-J2G">
                                 <rect key="frame" x="1" y="38" width="90" height="90"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="YsA-zU-qPA"/>
                                     <constraint firstAttribute="height" constant="90" id="ke6-3y-bha"/>
@@ -58,18 +65,21 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grand Canyon officials investigate squirrel-kicking video." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1N-Ua-yNH">
                                 <rect key="frame" x="98" y="38" width="198" height="47"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOz-Rw-nVH">
                                 <rect key="frame" x="98" y="92" width="198" height="58"/>
+                                <animations/>
                                 <string key="text">Authorities are looking into a viral Internet video that shows a man kicking a squirrel off what appears to be the edge of the Grand Canyon.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="RkA-Hk-3v2" firstAttribute="top" secondItem="GkK-cz-L4m" secondAttribute="bottom" constant="5" id="4Wc-vO-aHu"/>
@@ -90,6 +100,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="gmL-aO-OO6" secondAttribute="trailing" constant="8" id="0iF-ev-dTE"/>
                     <constraint firstItem="gmL-aO-OO6" firstAttribute="top" secondItem="M4d-Im-A5w" secondAttribute="top" constant="4" id="Gpr-zq-XMY"/>
@@ -97,6 +108,7 @@
                     <constraint firstItem="gmL-aO-OO6" firstAttribute="leading" secondItem="M4d-Im-A5w" secondAttribute="leading" constant="8" id="jFC-ZY-B6G"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <connections>
                 <outlet property="containerView" destination="gmL-aO-OO6" id="ume-ng-Yl0"/>
                 <outlet property="newsCategoryLabel" destination="6cp-fs-XR2" id="8A9-4P-DwA"/>

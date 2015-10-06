@@ -12,33 +12,27 @@
 #import "Utils.h"
 #import <QuartzCore/QuartzCore.h>
 
-static NSString* kMobStorStarburstURL   = @"https://s.yimg.com/av/geminiSDK/starburst2x.png";
 static int widthForNonText = 32;
 
 @interface FlurryCardCell ()
 
-@property (weak, nonatomic) IBOutlet UIButton *CallToActionButton;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *cardTitleLabel;
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *cardSummaryLabel;
 
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *cardSourceLabel;
-@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *sponseredImageView;
 @property (weak, nonatomic) IBOutlet UILabel *cardSponsoredLabel;
 
-@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *cardSquareImageView;
-@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *cardRectangleImageView;
+@property (unsafe_unretained, nonatomic) IBOutlet UIImageView *adImageView;
 
 @property (unsafe_unretained, nonatomic) IBOutlet UILabel *appCategoryLabel;
 @property (unsafe_unretained, nonatomic) IBOutlet UIImageView *ratingImageView;
-
 @property (unsafe_unretained, nonatomic) IBOutlet UIButton *CTASquareImageButton;
-@property (unsafe_unretained, nonatomic) IBOutlet UIButton *CTARectangleImageButton;
-
 
 @property (nonatomic, retain) FlurryAdNative* ad;
-@property (weak, nonatomic) IBOutlet UIView *cardSquareVideoViewContainer;
-@property (weak, nonatomic) IBOutlet UIView *cardRectangleVideoViewContainer;
+@property (weak, nonatomic) IBOutlet UIView *videoViewContainer;
 
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *imageAspectRatioConstraint;
+@property (weak, nonatomic) IBOutlet NSLayoutConstraint *ctaToImageTopConstraint;
 
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (weak, nonatomic) IBOutlet UIView *topColorView1;
@@ -145,42 +139,51 @@ static int widthForNonText = 32;
     
     self.cardSponsoredLabel.text = @"SPONSORED";
     
+    [self.containerView removeConstraint:self.ctaToImageTopConstraint];
+    
     if ([adNative isVideoAd]) {
-        if (hqImage) {
-            if (self.ad.isVideoAd)
-            {
-                adNative.videoViewContainer =  self.cardRectangleVideoViewContainer;
-            }
-            self.cardSquareVideoViewContainer.hidden = YES;
-            self.cardRectangleVideoViewContainer.hidden = NO;
+        if (![Utils isPortrait]) {
+            self.videoViewContainer.hidden = YES;
         }
         else
         {
-            if (self.ad.isVideoAd)
-            {
-                adNative.videoViewContainer =  self.cardSquareVideoViewContainer;
-            }
-            self.cardSquareVideoViewContainer.hidden = NO;
-            self.cardRectangleVideoViewContainer.hidden = YES;
+            adNative.videoViewContainer =  self.videoViewContainer;
+            self.videoViewContainer.hidden = NO;
         }
         
-        self.cardSquareImageView.hidden = YES;
-        self.cardRectangleImageView.hidden = YES;
+        self.ctaToImageTopConstraint = [NSLayoutConstraint constraintWithItem:self.CTASquareImageButton
+                                                                    attribute:NSLayoutAttributeTop
+                                                                    relatedBy:NSLayoutRelationEqual
+                                                                       toItem:self.videoViewContainer
+                                                                    attribute:NSLayoutAttributeBottom
+                                                                   multiplier:1.0
+                                                                     constant:5.0];
+        
+        self.adImageView.hidden = YES;
     }
     else if (hqImage) {
-        self.cardSquareImageView.hidden = YES;
-        self.cardRectangleImageView.hidden = NO;
-        self.cardRectangleVideoViewContainer.hidden = YES;
-        self.cardSquareVideoViewContainer.hidden = YES;
-        [self.cardRectangleImageView setImageWithURL:[NSURL URLWithString:hqImage] placeholderImage:[UIImage imageNamed:@"streamImage"]];
+        [self.adImageView removeConstraint:self.imageAspectRatioConstraint];
+        self.imageAspectRatioConstraint = [NSLayoutConstraint constraintWithItem:self.adImageView
+                                                                       attribute:NSLayoutAttributeWidth
+                                                                       relatedBy:NSLayoutRelationEqual
+                                                                          toItem:self.adImageView
+                                                                       attribute:NSLayoutAttributeHeight
+                                                                      multiplier:1200.0/627.0
+                                                                        constant:0.0f];
+        [self.adImageView addConstraint:self.imageAspectRatioConstraint];
+        self.ctaToImageTopConstraint = [NSLayoutConstraint constraintWithItem:self.CTASquareImageButton
+                                                                    attribute:NSLayoutAttributeTop
+                                                                    relatedBy:NSLayoutRelationEqual
+                                                                       toItem:self.adImageView
+                                                                    attribute:NSLayoutAttributeBottom
+                                                                   multiplier:1.0
+                                                                     constant:5.0];
+        self.adImageView.hidden = NO;
+        self.videoViewContainer.hidden = YES;
+        [self.adImageView setImageWithURL:[NSURL URLWithString:hqImage] placeholderImage:[UIImage imageNamed:@"streamImage"]];
     }
-    else {
-        self.cardRectangleImageView.hidden = YES;
-        self.cardSquareImageView.hidden = NO;
-        self.cardRectangleVideoViewContainer.hidden = YES;
-        self.cardSquareVideoViewContainer.hidden = YES;
-        [self.cardSquareImageView setImageWithURL:[NSURL URLWithString:origImage] placeholderImage:[UIImage imageNamed:@"streamImage"]];
-    }
+    
+    [self.containerView addConstraint:self.ctaToImageTopConstraint];
     
     if (ratingHqImage) {
         self.ratingImageView.hidden = NO;
@@ -205,28 +208,9 @@ static int widthForNonText = 32;
         }
     }
     
-    if ([adNative isVideoAd])
-    {
-        self.CTARectangleImageButton.hidden = YES;
-        self.CTASquareImageButton.hidden = YES;
-        self.CallToActionButton.hidden = NO;
-        self.CallToActionButton.layer.cornerRadius = 5;
-        self.CallToActionButton.backgroundColor = [Utils colorForPosition:position];
-        [self.CallToActionButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [self.CallToActionButton setTitle:callToActionTxt forState:UIControlStateNormal];
-    }
-    else if (callToActionTxt && hqImage) {
-        self.CTARectangleImageButton.hidden = NO;
-        self.CTASquareImageButton.hidden = YES;
-        self.CTARectangleImageButton.layer.cornerRadius = 5;
-        self.CTARectangleImageButton.backgroundColor = [Utils colorForPosition:position];
-        [self.CTARectangleImageButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        [self.CTARectangleImageButton setTitle:callToActionTxt forState:UIControlStateNormal];
-    }
-    else if (callToActionTxt && origImage)
+    if ([adNative isVideoAd] || (callToActionTxt && origImage))
     {
         self.CTASquareImageButton.hidden = NO;
-        self.CTARectangleImageButton.hidden = YES;
         self.CTASquareImageButton.layer.cornerRadius = 5;
         self.CTASquareImageButton.backgroundColor = [Utils colorForPosition:position];
         [self.CTASquareImageButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
@@ -234,11 +218,9 @@ static int widthForNonText = 32;
     }
     else
     {
-        self.CTARectangleImageButton.hidden = YES;
         self.CTASquareImageButton.hidden = YES;
     }
     
-    [self.sponseredImageView setImage:[UIImage imageNamed:@"icn_sponsored_dense"]];
     self.ad.trackingView = self;
     
     self.topColorView1.backgroundColor = [Utils colorForPosition:position];

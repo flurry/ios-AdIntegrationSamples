@@ -19,10 +19,6 @@
         self.link = dictionary[@"link"];
         self.category = dictionary[@"category"];
         
-        // Dirty fix to for this string since it is too long
-        if ([[self.category uppercaseString] isEqualToString:@"TECHNOLOGY"]) {
-            self.category = @"TECH";
-        }
         NSArray *images = dictionary[@"images"];
         for (NSDictionary *image in images) {
             if (image[@"url"] != nil) {

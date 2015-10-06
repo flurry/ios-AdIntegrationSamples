@@ -19,7 +19,7 @@ static const int SECTION_SKIP = 3;
 
 @interface StreamTableViewController () <FlurryAdNativeDelegate>
 
-@property (nonatomic, strong) NSArray *newsItems;
+@property (nonatomic, strong) NSMutableArray *newsItems;
 @property (nonatomic, strong) NewsDetailViewController *newsDetail;
 
 @property (nonatomic, retain) NSMutableArray* nativeAds;
@@ -46,26 +46,13 @@ static const int SECTION_SKIP = 3;
     [self.tableView registerNib:[UINib nibWithNibName:@"StreamCell" bundle:nil] forCellReuseIdentifier:@"StreamCell"];
     [self.tableView registerNib:[UINib nibWithNibName:@"FlurryStreamCell" bundle:nil] forCellReuseIdentifier:@"FlurryStreamCell"];
     
-    //[self setNavBarItem];
     [self loadNews];
-    
-    //self.navigationItem.titleView = [[UIImageView alloc] initWithImage: [UIImage imageNamed:@"smaller_logo"]];
     
     UIRefreshControl *refreshControl = [[UIRefreshControl alloc] init];
     [refreshControl addTarget:self action:@selector(loadNews) forControlEvents:UIControlEventValueChanged];
     self.refreshControl = refreshControl;
     
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-}
-
-- (void)setNavBarItem {
-   
-    UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    btn.frame = CGRectMake(0, 0, 25, 25);
-   
-    [btn setImage:[UIImage imageNamed:@"hamburger_icon"] forState:UIControlStateNormal];
-    //UIBarButtonItem *revealButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    //self.navigationItem.leftBarButtonItem = revealButtonItem;
 }
 
 
@@ -89,7 +76,16 @@ static const int SECTION_SKIP = 3;
 }
 
 - (void)loadNews {
-    
+    self.newsItems = [[NSMutableArray alloc] initWithCapacity:15];
+    for (int i = 0; i < 15; i++) {
+        NewsItem *newsItem = [[NewsItem alloc] initWithDictionary:[NSDictionary
+                                                                   dictionaryWithObjectsAndKeys:@"Lorem ipsum dolor", @"title",
+                                                                   @"Lorem ipsum dolor sit amet, putent nusquam placerat ne pri, cu eum paulo sapientem.", @"summary",
+                                                                   @"NEWS", @"category",
+                                                                   @"News Publisher", @"publisher",
+                                                                   nil]];
+        [self.newsItems addObject:newsItem];
+    }
     static const int INIT_MAX_ADS = 10;
     self.nativeAds = [NSMutableArray array];
     [self loadAds:INIT_MAX_ADS];
@@ -122,7 +118,7 @@ static const int SECTION_SKIP = 3;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 12;//self.newsItems.count;
+    return self.newsItems.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

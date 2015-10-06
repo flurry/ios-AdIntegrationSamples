@@ -9,7 +9,6 @@
 #import "MasterViewController.h"
 
 
-
 @interface MasterViewController () {
     NSMutableArray *options;
 }
@@ -34,8 +33,6 @@
     }
     NSIndexPath *indexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
-    
-    
     
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(updateToOrientationOnRotation) name:@"UIDeviceOrientationDidChangeNotification" object:nil];
@@ -68,9 +65,6 @@
     return YES;
 }
 
-
-
-
 #pragma mark - Table View
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -97,8 +91,6 @@
     return NO;
 }
 
-
-
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     NSString *selection = options[indexPath.row];
@@ -106,18 +98,15 @@
     if ([selection isEqualToString:@"Flurry Banners"]) {
         [self performSegueWithIdentifier:@"banners" sender:self];
     }
-    else
-        if ([selection isEqualToString:@"Flurry Takovers"]) {
-            [self performSegueWithIdentifier:@"takeovers" sender:nil];
-        }
-    else
-            if ([selection isEqualToString:@"Flurry Native"]) {
-                [self performSegueWithIdentifier:@"native" sender:nil];
-            }
-    else
-            if ([selection isEqualToString:@"Flurry Card"]) {
-                [self performSegueWithIdentifier:@"card" sender:nil];
-            }
+    else if ([selection isEqualToString:@"Flurry Takovers"]) {
+        [self performSegueWithIdentifier:@"takeovers" sender:nil];
+    }
+    else if ([selection isEqualToString:@"Flurry Native"]) {
+        [self performSegueWithIdentifier:@"native" sender:nil];
+    }
+    else if ([selection isEqualToString:@"Flurry Card"]) {
+        [self performSegueWithIdentifier:@"card" sender:nil];
+    }
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender

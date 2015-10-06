@@ -45,20 +45,12 @@ static int widthForNonText = 162;
 }
 
 - (void)setupWithNewsItem:(NewsItem *)newsItem atPosition:(NSInteger)position {
-    self.newsTitleLabel.text = @"Lorem ipsum dolor";//newsItem.title;
+    self.newsTitleLabel.text = newsItem.title;
     self.newsTitleLabel.preferredMaxLayoutWidth = self.bounds.size.width - widthForNonText;
-    self.newsDescriptionLabel.text = @"Lorem ipsum dolor sit amet, putent nusquam placerat ne pri, cu eum paulo sapientem. In eos facer tantas. Per ex lorem viris postulant, at dicat essent nec, usu elitr maiestatis interesset te. Mel facer nobis dignissim an, omittam accusata at usu. In sed epicuri apeirian. Et cum eros accusata, nostrum propriae assentior in his, cu solet molestie adipisci sit.";//newsItem.summary;
+    self.newsDescriptionLabel.text = newsItem.summary;
     self.newsDescriptionLabel.preferredMaxLayoutWidth = self.bounds.size.width - widthForNonText;
     self.newsCategoryLabel.text = newsItem.category ? [newsItem.category uppercaseString] : @"NEWS";
-    self.newsSourceLabel.text = @"News Publisher";//newsItem.publisher;
-
-    self.newsImageView.contentMode = UIViewContentModeScaleAspectFit;
-    NSURL *url = newsItem.image140x140URL ? newsItem.image140x140URL : newsItem.imageOriginalURL;
-    if (url) {
-        [self.newsImageView setImageWithURL:url];
-    } else {
-        self.newsImageView.image = [UIImage imageNamed:@"icon-76.png"];
-    }
+    self.newsSourceLabel.text = newsItem.publisher;
     
     self.topColorView1.backgroundColor = [Utils colorForPosition:position];
     self.topColorView2.backgroundColor = [Utils colorForPosition:position];

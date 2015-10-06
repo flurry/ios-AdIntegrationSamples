@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
     </dependencies>
     <objects>
@@ -11,6 +12,7 @@
             <rect key="frame" x="0.0" y="0.0" width="568" height="302"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="CcZ-OI-hCP" id="Bav-aB-9EJ">
+                <rect key="frame" x="0.0" y="0.0" width="568" height="302"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8XW-bs-HVs">
@@ -18,6 +20,7 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="2ZH-1d-pbK">
                                 <rect key="frame" x="524" y="8" width="20" height="25"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="20" id="bhY-zc-s9E"/>
                                     <constraint firstAttribute="height" constant="25" id="no8-Wu-g7E"/>
@@ -25,6 +28,7 @@
                             </imageView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wUh-4f-tzv">
                                 <rect key="frame" x="0.0" y="0.0" width="552" height="3"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.68576203729999996" blue="0.16351306030000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="QH7-Qg-n1Y"/>
@@ -35,11 +39,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUSINESS" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ui0-aO-BKy">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
                                         <color key="textColor" red="0.98218282079999997" green="0.98054670369999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.68576203729999996" blue="0.16351306030000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Ui0-aO-BKy" secondAttribute="bottom" id="MYB-PQ-yIR"/>
@@ -52,24 +58,28 @@
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Grand Canyon officials investigate squirrel-kicking video. Some more text." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="svF-OU-Qap">
                                 <rect key="frame" x="280" y="41" width="264" height="70"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGy-Bv-fVn">
                                 <rect key="frame" x="280" y="119" width="264" height="58"/>
+                                <animations/>
                                 <string key="text">Authorities are looking into a viral Internet video that shows a man kicking a squirrel off what appears to be the edge of the Grand Canyon.</string>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="358-Xs-OSG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon-76.png" translatesAutoresizingMaskIntoConstraints="NO" id="358-Xs-OSG">
                                 <rect key="frame" x="8" y="38" width="264" height="218"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="358-Xs-OSG" secondAttribute="height" multiplier="144:119" id="hCS-S6-j3b"/>
                                 </constraints>
                             </imageView>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.98218282079999997" green="0.98054670369999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="svF-OU-Qap" firstAttribute="top" secondItem="2ZH-1d-pbK" secondAttribute="bottom" constant="8" id="60M-Yu-CAU"/>
@@ -91,6 +101,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstItem="8XW-bs-HVs" firstAttribute="leading" secondItem="Bav-aB-9EJ" secondAttribute="leading" constant="8" id="E48-ne-6ub"/>
                     <constraint firstItem="8XW-bs-HVs" firstAttribute="top" secondItem="Bav-aB-9EJ" secondAttribute="top" constant="4" id="MgO-z7-5pv"/>
@@ -98,6 +109,7 @@
                     <constraint firstAttribute="trailing" secondItem="8XW-bs-HVs" secondAttribute="trailing" constant="8" id="zah-WL-MdW"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <connections>
                 <outlet property="containerView" destination="8XW-bs-HVs" id="ZSs-o1-COn"/>
                 <outlet property="newsCategoryLabel" destination="Ui0-aO-BKy" id="G2m-Vy-mEi"/>
@@ -111,6 +123,7 @@
         </tableViewCell>
     </objects>
     <resources>
+        <image name="Icon-76.png" width="76" height="76"/>
         <image name="share_icon.png" width="29" height="36"/>
     </resources>
 </document>

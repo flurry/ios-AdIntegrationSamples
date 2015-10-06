@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
@@ -10,6 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VXJ-8C-zO1" id="EUU-wy-xv5">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="186"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ru-AN-acj">
@@ -20,11 +22,13 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SPONSORED" textAlignment="center" lineBreakMode="clip" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bk2-zc-ico">
                                         <rect key="frame" x="0.0" y="0.0" width="90" height="30"/>
+                                        <animations/>
                                         <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="13"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.68576203729999996" blue="0.16351306030000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="bk2-zc-ico" firstAttribute="top" secondItem="TnG-ZO-vb8" secondAttribute="top" id="DCl-Ym-4k2"/>
@@ -37,6 +41,7 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1og-wf-xaf">
                                 <rect key="frame" x="0.0" y="0.0" width="304" height="3"/>
+                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.68576203729999996" blue="0.16351306030000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="3" id="viv-S1-zOD"/>
@@ -44,6 +49,7 @@
                             </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uK1-s0-J2G">
                                 <rect key="frame" x="0.0" y="38" width="90" height="90"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="90" id="Uqf-9N-s3d"/>
                                     <constraint firstAttribute="height" constant="90" id="hIH-jk-0l5"/>
@@ -51,12 +57,14 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Often Overlooked Method to Pay Off Mortgage" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1N-Ua-yNH">
                                 <rect key="frame" x="98" y="38" width="198" height="47"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="starburst.png" translatesAutoresizingMaskIntoConstraints="NO" id="ogz-Ud-ZdF">
                                 <rect key="frame" x="94" y="4" width="22" height="22"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="22" id="PUO-gA-Zko"/>
                                     <constraint firstAttribute="height" constant="22" id="vJK-yM-o84"/>
@@ -64,6 +72,7 @@
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="share_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="JaD-km-ubi">
                                 <rect key="frame" x="276" y="8" width="20" height="25"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="25" id="Jsy-aT-mUt"/>
                                     <constraint firstAttribute="width" constant="20" id="oD8-gj-cbK"/>
@@ -71,12 +80,14 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you own a home and pay for a mortgage, you could reduce your payments by an average of $4,100 a year" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZOz-Rw-nVH">
                                 <rect key="frame" x="98" y="92" width="198" height="58"/>
+                                <animations/>
                                 <fontDescription key="fontDescription" name="Avenir-Roman" family="Avenir" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Associated Press" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m9e-gM-ZyO">
                                 <rect key="frame" x="124" y="5" width="101" height="21"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="ji3-h8-Twk"/>
                                 </constraints>
@@ -85,6 +96,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.98218282079999997" green="0.98054670369999997" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="l1N-Ua-yNH" firstAttribute="top" secondItem="JaD-km-ubi" secondAttribute="bottom" constant="5" id="4Ar-Iz-ekD"/>
@@ -109,6 +121,7 @@
                         </constraints>
                     </view>
                 </subviews>
+                <animations/>
                 <constraints>
                     <constraint firstItem="5Ru-AN-acj" firstAttribute="top" secondItem="EUU-wy-xv5" secondAttribute="top" constant="4" id="ABy-S1-kti"/>
                     <constraint firstAttribute="trailing" secondItem="5Ru-AN-acj" secondAttribute="trailing" constant="8" id="Mz1-j6-Vdw"/>
@@ -116,6 +129,7 @@
                     <constraint firstItem="5Ru-AN-acj" firstAttribute="leading" secondItem="EUU-wy-xv5" secondAttribute="leading" constant="8" id="jlm-Ci-kVw"/>
                 </constraints>
             </tableViewCellContentView>
+            <animations/>
             <connections>
                 <outlet property="containerView" destination="5Ru-AN-acj" id="R0T-3t-UBQ"/>
                 <outlet property="streamDescriptionLabel" destination="ZOz-Rw-nVH" id="PkB-sU-ZYm"/>

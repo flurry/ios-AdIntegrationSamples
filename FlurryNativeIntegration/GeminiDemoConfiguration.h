@@ -10,10 +10,4 @@
 - (NSString*) environment;
 - (NSString*) adSpace;
 
-// environment
-- (NSString*) adServerHostName;
-- (NSString*) adLogServerHostName;
-- (NSString*) analyticsServerHostName;
-
-
 @end

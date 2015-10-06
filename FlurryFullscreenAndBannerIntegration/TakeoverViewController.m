@@ -7,8 +7,8 @@
 //
 
 #import "TakeoverViewController.h"
-//#import "Flurry.h"
 
+#import "Flurry.h"
 #import "FlurryAdInterstitial.h"
 #import "FlurryAdInterstitialDelegate.h"
 #import "FlurryAdNative.h"
@@ -24,8 +24,6 @@
 @property (nonatomic, strong) FlurryAdInterstitial* adInterstitial;
 
 @property (retain, nonatomic) IBOutlet UIImageView *backgroundView;
-
-//@property
 
 @property NSUInteger previousAdIndex;
 @property NSUInteger currentAdIndex;
@@ -48,7 +46,7 @@
     [super viewDidLoad];
     
     
-    infoLbl.text = @"FlurrySDK v6.3";
+    infoLbl.text = [NSString stringWithFormat:@"Version: %@", [Flurry getFlurryAgentVersion]];
     
     //TakeoverAdSpaceList.plist contains the list of ad spaces used in this sample
     NSString* plistFile = [[NSBundle mainBundle] pathForResource: @"TakeoverAdSpaceList"

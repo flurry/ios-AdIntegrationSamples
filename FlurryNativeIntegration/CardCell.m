@@ -51,22 +51,11 @@ static int widthForNonText = 24;
         [self adjustForLandscape:newsItem];
     }
     
-    self.newsTitleLabel.text = @"NEWS Title";//newsItem.title;
+    self.newsTitleLabel.text = newsItem.title;
     self.newsTitleLabel.numberOfLines = 2;
-    self.newsSummaryLabel.text = @"This one is breaking news. This is the summary of the news. Now you have read the entire news. :)";//newsItem.summary;
-    self.newsCategoryLabel.text = @"fake category";//newsItem.category ? [newsItem.category uppercaseString] : @"NEWS";
-    self.newsSourceLabel.text = @"Random Publisher";//newsItem.publisher;
-    self.newsImageView.contentMode = UIViewContentModeScaleAspectFit;
-    
-    NSURL *url = newsItem.image640x530URL ? newsItem.image640x530URL : newsItem.imageOriginalURL;
-    if (url) {
-        [self.newsImageView setImageWithURL:url];
-    } else {
-        self.newsImageView.image = nil;
-        if ([Utils isPortrait]) {
-            self.newsSummaryLabel.numberOfLines = 10;
-        }
-    }
+    self.newsSummaryLabel.text = newsItem.summary;
+    self.newsCategoryLabel.text = newsItem.category ? [newsItem.category uppercaseString] : @"NEWS";
+    self.newsSourceLabel.text = newsItem.publisher;
     
     self.topColorView1.backgroundColor = [Utils colorForPosition:position];
     self.topColorView2.backgroundColor = [Utils colorForPosition:position];
@@ -118,11 +107,9 @@ static int widthForNonText = 24;
     
     int categoryColorView = 30;
     
-    CGFloat contentWidth = bounds.width - 24;
     int textWidth = bounds.width - widthForNonText;
     
-    NSURL *url = newsItem.image640x530URL ? newsItem.image640x530URL : newsItem.imageOriginalURL;
-    CGFloat imageHeight = url == nil ? 0 : contentWidth * (238.0 / 288.0) + 20;
+    CGFloat imageHeight = 150;
     
     CGSize titleSize = [Utils sizeForText:newsItem.title
                                  fontSize:17.0
@@ -135,7 +122,7 @@ static int widthForNonText = 24;
                                    fontSize:14.0
                                    fontName:@"Avenir-Roman"
                                    maxWidth:textWidth
-                                  maxHeight:summaryFontSize.height * (url == nil ? 10 : 3)];
+                                  maxHeight:summaryFontSize.height * 3];
     
     return outerPadding + categoryColorView + innerPadding + titleSize.height + innerPadding + summarySize.height + innerPadding + imageHeight + innerPadding + outerPadding + 4;
 }
