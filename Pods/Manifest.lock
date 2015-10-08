@@ -25,7 +25,7 @@ PODS:
   - Flurry-iOS-SDK/FlurrySDK (7.2.1)
 
 DEPENDENCIES:
-  - AFNetworking
+  - AFNetworking (~> 2.5)
   - Flurry-iOS-SDK/FlurryAds (~> 7.2.1)
   - Flurry-iOS-SDK/FlurrySDK (~> 7.2.1)
 

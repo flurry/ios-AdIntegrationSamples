@@ -20,7 +20,7 @@ static GeminiDemoConfiguration* gInstance;
         if (gInstance == nil)
         {
             gInstance = [[self.class alloc] init];
-            NSString *theFile = [[NSBundle mainBundle] pathForResource:@"GeminiDemoConfiguration" ofType:@"plist"];
+            NSString *theFile = [[NSBundle mainBundle] pathForResource:@"CardAdSpaceList" ofType:@"plist"];
             gInstance.info = [NSMutableDictionary dictionaryWithContentsOfFile:theFile];
         }
     }

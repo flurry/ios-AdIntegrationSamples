@@ -14,17 +14,14 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    
-    // Replace this API key with YOUR_API_KEY acquired from Flurry's dev portal
-    
 
-    NSString* plistFile =[ [NSBundle mainBundle] pathForResource: @"StreamAdSpaceList"  ofType: @"plist" ];
+    NSString* plistFile =[ [NSBundle mainBundle] pathForResource: @"ApiKeyList"  ofType: @"plist" ];
     NSMutableDictionary* info;
     info = [NSMutableDictionary dictionaryWithContentsOfFile:plistFile];
     
     NSString* apiKEY = [ info objectForKey:@"apiKey"] ;
-    
-    
+
+    // Replace this API key with YOUR_API_KEY acquired from Flurry's dev portal
     [Flurry startSession: apiKEY];//@"6Z27CWHJXRC29QVJZX4R"];//
     
     //enabling test mode to see video ads, remove this line if you dont want to see test ads.

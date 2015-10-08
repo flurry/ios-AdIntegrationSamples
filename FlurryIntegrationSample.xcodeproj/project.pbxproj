@@ -18,7 +18,9 @@
 		24135A5D1B8286A400B9F132 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A5C1B8286A400B9F132 /* AVKit.framework */; };
 		24135A5F1B8286E700B9F132 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A5E1B8286E700B9F132 /* CoreMedia.framework */; };
 		24135A611B8286FB00B9F132 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A601B8286FB00B9F132 /* AVFoundation.framework */; };
-		24135A631B828B0400B9F132 /* GeminiDemoConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24135A621B828B0400B9F132 /* GeminiDemoConfiguration.plist */; };
+		24E76F8B1BC6E272005BB0A1 /* CardAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E76F8A1BC6E272005BB0A1 /* CardAdSpaceList.plist */; settings = {ASSET_TAGS = (); }; };
+		24E76F8D1BC6E802005BB0A1 /* ApiKeyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E76F8C1BC6E802005BB0A1 /* ApiKeyList.plist */; settings = {ASSET_TAGS = (); }; };
+		24E76F8F1BC6E818005BB0A1 /* StreamAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E76F8E1BC6E818005BB0A1 /* StreamAdSpaceList.plist */; settings = {ASSET_TAGS = (); }; };
 		5B37B0561AD3A57B0087263F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B0541AD3A57B0087263F /* InfoPlist.strings */; };
 		5B37B06B1AD4F4C10087263F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B05D1AD4F4C00087263F /* Default-568h@2x.png */; };
 		5B37B06C1AD4F4C10087263F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B05E1AD4F4C00087263F /* Default.png */; };
@@ -36,7 +38,6 @@
 		5B37B0781AD4F4C10087263F /* flurryicon.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B06A1AD4F4C10087263F /* flurryicon.png */; };
 		5B4EE1EF19D4AFFD000B698B /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B4EE1EE19D4AFFD000B698B /* StoreKit.framework */; };
 		5B74B7311AD39342003A5C05 /* TakeoverAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B74B7221AD39342003A5C05 /* TakeoverAdSpaceList.plist */; };
-		5B74B7321AD39342003A5C05 /* StreamAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5B74B7231AD39342003A5C05 /* StreamAdSpaceList.plist */; };
 		5B74B7331AD39342003A5C05 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B74B7241AD39342003A5C05 /* main.m */; };
 		5B74B7341AD39342003A5C05 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B74B7251AD39342003A5C05 /* Images.xcassets */; };
 		5B74B7371AD39342003A5C05 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B74B72C1AD39342003A5C05 /* Main_iPad.storyboard */; };
@@ -95,7 +96,9 @@
 		24135A5C1B8286A400B9F132 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
 		24135A5E1B8286E700B9F132 /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
 		24135A601B8286FB00B9F132 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		24135A621B828B0400B9F132 /* GeminiDemoConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = GeminiDemoConfiguration.plist; path = FlurryNativeIntegration/GeminiDemoConfiguration.plist; sourceTree = "<group>"; };
+		24E76F8A1BC6E272005BB0A1 /* CardAdSpaceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CardAdSpaceList.plist; path = FlurryNativeIntegration/CardAdSpaceList.plist; sourceTree = "<group>"; };
+		24E76F8C1BC6E802005BB0A1 /* ApiKeyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeyList.plist; sourceTree = "<group>"; };
+		24E76F8E1BC6E818005BB0A1 /* StreamAdSpaceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StreamAdSpaceList.plist; path = FlurryNativeIntegration/StreamAdSpaceList.plist; sourceTree = "<group>"; };
 		2E4792F91FEE389DF1B439E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		46A6B5B92CE216D2E63FC9FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		5B37B0551AD3A57B0087263F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = FlurryFullscreenAndBannerIntegration/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
@@ -115,7 +118,6 @@
 		5B37B06A1AD4F4C10087263F /* flurryicon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = flurryicon.png; sourceTree = "<group>"; };
 		5B4EE1EE19D4AFFD000B698B /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		5B74B7221AD39342003A5C05 /* TakeoverAdSpaceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = TakeoverAdSpaceList.plist; path = FlurryFullscreenAndBannerIntegration/TakeoverAdSpaceList.plist; sourceTree = SOURCE_ROOT; };
-		5B74B7231AD39342003A5C05 /* StreamAdSpaceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StreamAdSpaceList.plist; path = FlurryFullscreenAndBannerIntegration/StreamAdSpaceList.plist; sourceTree = SOURCE_ROOT; };
 		5B74B7241AD39342003A5C05 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = FlurryFullscreenAndBannerIntegration/main.m; sourceTree = SOURCE_ROOT; };
 		5B74B7251AD39342003A5C05 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = FlurryFullscreenAndBannerIntegration/Images.xcassets; sourceTree = SOURCE_ROOT; };
 		5B74B7261AD39342003A5C05 /* FlurryIntegrationSample-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "FlurryIntegrationSample-Prefix.pch"; path = "FlurryFullscreenAndBannerIntegration/FlurryIntegrationSample-Prefix.pch"; sourceTree = SOURCE_ROOT; };
@@ -207,7 +209,6 @@
 		5B37B0571AD489E60087263F /* FlurryNativeIntegration */ = {
 			isa = PBXGroup;
 			children = (
-				24135A621B828B0400B9F132 /* GeminiDemoConfiguration.plist */,
 				24135A591B82865700B9F132 /* GeminiDemoConfiguration.h */,
 				24135A5A1B82865700B9F132 /* GeminiDemoConfiguration.m */,
 				24135A451B82852000B9F132 /* CardCell.h */,
@@ -343,9 +344,11 @@
 		5BB07AA918E0FFD8007A7F50 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				24E76F8C1BC6E802005BB0A1 /* ApiKeyList.plist */,
+				24E76F8E1BC6E818005BB0A1 /* StreamAdSpaceList.plist */,
+				24E76F8A1BC6E272005BB0A1 /* CardAdSpaceList.plist */,
 				5B74B7221AD39342003A5C05 /* TakeoverAdSpaceList.plist */,
 				5B74B7301AD39342003A5C05 /* BannerAdSpaceList.plist */,
-				5B74B7231AD39342003A5C05 /* StreamAdSpaceList.plist */,
 				5B74B7241AD39342003A5C05 /* main.m */,
 				5B74B7251AD39342003A5C05 /* Images.xcassets */,
 				5B74B7261AD39342003A5C05 /* FlurryIntegrationSample-Prefix.pch */,
@@ -441,6 +444,7 @@
 				5B74B7341AD39342003A5C05 /* Images.xcassets in Resources */,
 				5B37B06C1AD4F4C10087263F /* Default.png in Resources */,
 				5B37B06F1AD4F4C10087263F /* flurry-demo-landscape-4s.png in Resources */,
+				24E76F8D1BC6E802005BB0A1 /* ApiKeyList.plist in Resources */,
 				5B74B7C91AD3A2DE003A5C05 /* share_icon@3x.png in Resources */,
 				5B74B7C81AD3A2DE003A5C05 /* starburst.png in Resources */,
 				5B37B0761AD4F4C10087263F /* flurry-splash-portrait.png in Resources */,
@@ -453,14 +457,13 @@
 				5B37B06D1AD4F4C10087263F /* Default~ipad.png in Resources */,
 				5B74B7D41AD3A2DE003A5C05 /* Icon-72@2x.png in Resources */,
 				5B74B7311AD39342003A5C05 /* TakeoverAdSpaceList.plist in Resources */,
+				24E76F8B1BC6E272005BB0A1 /* CardAdSpaceList.plist in Resources */,
 				5B37B0711AD4F4C10087263F /* flurry-demo768-1024.png in Resources */,
-				24135A631B828B0400B9F132 /* GeminiDemoConfiguration.plist in Resources */,
 				5B74B7D71AD3A2DE003A5C05 /* FlurryStreamCell.xib in Resources */,
 				5B74B7CB1AD3A2DE003A5C05 /* share_icon.png in Resources */,
 				5B74B7CD1AD3A2DE003A5C05 /* NewsDetailViewController.xib in Resources */,
 				24135A511B82852000B9F132 /* CardLandscapeCell.xib in Resources */,
 				5B74B7CF1AD3A2DE003A5C05 /* Icon@2x.png in Resources */,
-				5B74B7321AD39342003A5C05 /* StreamAdSpaceList.plist in Resources */,
 				5B74B7D31AD3A2DE003A5C05 /* Icon-76.png in Resources */,
 				5B37B0721AD4F4C10087263F /* flurry-splash-landscape-4s.png in Resources */,
 				5B74B7D21AD3A2DE003A5C05 /* Icon-76@2x.png in Resources */,
@@ -470,6 +473,7 @@
 				5B37B0701AD4F4C10087263F /* flurry-demo-landscape.png in Resources */,
 				5B74B7381AD39342003A5C05 /* Main_iPhone.storyboard in Resources */,
 				5B37B06B1AD4F4C10087263F /* Default-568h@2x.png in Resources */,
+				24E76F8F1BC6E818005BB0A1 /* StreamAdSpaceList.plist in Resources */,
 				5B74B7D61AD3A2DE003A5C05 /* Icon-60@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
