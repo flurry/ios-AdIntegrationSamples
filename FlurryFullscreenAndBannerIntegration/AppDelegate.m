@@ -21,7 +21,7 @@
     
     NSString* apiKEY = [ info objectForKey:@"apiKey"] ;
 
-    // Replace this API key with YOUR_API_KEY acquired from Flurry's dev portal
+    // Replace this API key with YOUR_API_KEY acquired from Flurry's dev portal, if not reading from plist
     [Flurry startSession: apiKEY];//@"6Z27CWHJXRC29QVJZX4R"];//
     
     //enabling test mode to see video ads, remove this line if you dont want to see test ads.
