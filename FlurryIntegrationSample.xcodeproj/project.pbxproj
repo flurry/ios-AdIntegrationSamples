@@ -18,9 +18,9 @@
 		24135A5D1B8286A400B9F132 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A5C1B8286A400B9F132 /* AVKit.framework */; };
 		24135A5F1B8286E700B9F132 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A5E1B8286E700B9F132 /* CoreMedia.framework */; };
 		24135A611B8286FB00B9F132 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24135A601B8286FB00B9F132 /* AVFoundation.framework */; };
-		24E76F8B1BC6E272005BB0A1 /* CardAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E76F8A1BC6E272005BB0A1 /* CardAdSpaceList.plist */; settings = {ASSET_TAGS = (); }; };
-		24E76F8D1BC6E802005BB0A1 /* ApiKeyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E76F8C1BC6E802005BB0A1 /* ApiKeyList.plist */; settings = {ASSET_TAGS = (); }; };
-		24E76F8F1BC6E818005BB0A1 /* StreamAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E76F8E1BC6E818005BB0A1 /* StreamAdSpaceList.plist */; settings = {ASSET_TAGS = (); }; };
+		24E76F8B1BC6E272005BB0A1 /* CardAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E76F8A1BC6E272005BB0A1 /* CardAdSpaceList.plist */; };
+		24E76F8D1BC6E802005BB0A1 /* ApiKeyList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E76F8C1BC6E802005BB0A1 /* ApiKeyList.plist */; };
+		24E76F8F1BC6E818005BB0A1 /* StreamAdSpaceList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 24E76F8E1BC6E818005BB0A1 /* StreamAdSpaceList.plist */; };
 		5B37B0561AD3A57B0087263F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B0541AD3A57B0087263F /* InfoPlist.strings */; };
 		5B37B06B1AD4F4C10087263F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B05D1AD4F4C00087263F /* Default-568h@2x.png */; };
 		5B37B06C1AD4F4C10087263F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B37B05E1AD4F4C00087263F /* Default.png */; };
@@ -380,6 +380,7 @@
 				5BB07A9C18E0FFD8007A7F50 /* Frameworks */,
 				5BB07A9D18E0FFD8007A7F50 /* Resources */,
 				B353F46DE02FCB1A49882D3D /* Copy Pods Resources */,
+				A0DA1EE9C75E850757B2A5B0 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -481,6 +482,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A0DA1EE9C75E850757B2A5B0 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		B353F46DE02FCB1A49882D3D /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

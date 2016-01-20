@@ -1,4 +1,6 @@
-iOS Ad Integration Sample
+[![Build Status](https://travis-ci.org/flurry/ios-AdIntegrationSamples.svg?branch=master)](https://travis-ci.org/flurry/ios-AdIntegrationSamples)
+
+iOS Ad Integration Sample 
 ============================
 
 

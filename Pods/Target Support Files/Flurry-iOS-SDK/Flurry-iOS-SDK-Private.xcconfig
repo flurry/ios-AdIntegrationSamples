@@ -1,7 +1,0 @@
-#include "Flurry-iOS-SDK.xcconfig"
-GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/Flurry-iOS-SDK" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/Flurry-iOS-SDK"
-LIBRARY_SEARCH_PATHS = ${FLURRY_IOS_SDK_LIBRARY_SEARCH_PATHS}
-OTHER_LDFLAGS = ${FLURRY_IOS_SDK_OTHER_LDFLAGS}
-PODS_ROOT = ${SRCROOT}
-SKIP_INSTALL = YES
