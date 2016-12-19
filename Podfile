@@ -1,4 +1,11 @@
-platform :ios, '9.0'
-pod 'Flurry-iOS-SDK/FlurrySDK', '~> 7.3.0'
-pod 'Flurry-iOS-SDK/FlurryAds', '~> 7.3.0'
-pod "AFNetworking"
+# platform :ios, '9.0'
+
+target 'FlurryIntegrationSample' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for FlurryIntegrationSample
+pod 'Flurry-iOS-SDK/FlurrySDK', '~>7.8.2'  #Analytics Pod
+pod 'Flurry-iOS-SDK/FlurryAds', '~>7.8.2' #Advertising Pod (requires Analytics)
+pod 'AFNetworking', '~> 3.1'
+end
