@@ -8,6 +8,6 @@
 	<string>SkippableVideoTakeover</string>
 	<string>RewardedVideoTakeover</string>
 	<string>RTBTakeover</string>
-	<string>VASTTakeover</string>
+	<string>VideoTakeover</string>
 </array>
 </plist>

@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>adSpace</key>
-	<string>infeed_video_yodel</string>
+	<string>InStream</string>
 	<key>environment</key>
 	<string>production</string>
 </dict>
