@@ -69,10 +69,6 @@ static const int SECTION_SKIP = 3;
     {
         FlurryAdNative* nativeAd = [[FlurryAdNative alloc] initWithSpace:adSpace];
         
-        FlurryAdTargeting* adTargeting = [FlurryAdTargeting targeting];
-        adTargeting.testAdsEnabled = YES;
-        nativeAd.targeting = adTargeting;
-        
         nativeAd.adDelegate = self;
         nativeAd.viewControllerForPresentation = self;        
         [nativeAd fetchAd];
