@@ -77,11 +77,11 @@
 		5BB07AF018E1051F007A7F50 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AEF18E1051F007A7F50 /* Security.framework */; };
 		5BB07AF418E1053C007A7F50 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AF318E1053C007A7F50 /* SystemConfiguration.framework */; };
 		5BB07AF618E1054A007A7F50 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BB07AF518E1054A007A7F50 /* libz.dylib */; };
-		A80C40865084EB78011816F7 /* libPods-FlurryIntegrationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CCC4769B95F6280E2DAF826 /* libPods-FlurryIntegrationSample.a */; };
+		EEAE2FF0E45C58DE1C1006C1 /* libPods-FlurryIntegrationSample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AEAACFE944DA034CC17200E8 /* libPods-FlurryIntegrationSample.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		1CCC4769B95F6280E2DAF826 /* libPods-FlurryIntegrationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlurryIntegrationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		122E2BBB11FACD20E86C6683 /* Pods-FlurryIntegrationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryIntegrationSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryIntegrationSample/Pods-FlurryIntegrationSample.release.xcconfig"; sourceTree = "<group>"; };
 		24135A451B82852000B9F132 /* CardCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardCell.h; path = FlurryNativeIntegration/CardCell.h; sourceTree = "<group>"; };
 		24135A461B82852000B9F132 /* CardCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardCell.m; path = FlurryNativeIntegration/CardCell.m; sourceTree = "<group>"; };
 		24135A471B82852000B9F132 /* CardCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = CardCell.xib; path = FlurryNativeIntegration/CardCell.xib; sourceTree = "<group>"; };
@@ -100,8 +100,7 @@
 		24E76F8A1BC6E272005BB0A1 /* CardAdSpaceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = CardAdSpaceList.plist; path = FlurryNativeIntegration/CardAdSpaceList.plist; sourceTree = "<group>"; };
 		24E76F8C1BC6E802005BB0A1 /* ApiKeyList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ApiKeyList.plist; sourceTree = "<group>"; };
 		24E76F8E1BC6E818005BB0A1 /* StreamAdSpaceList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = StreamAdSpaceList.plist; path = FlurryNativeIntegration/StreamAdSpaceList.plist; sourceTree = "<group>"; };
-		2E4792F91FEE389DF1B439E8 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		46A6B5B92CE216D2E63FC9FF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3F46AE20CFB2A4B9FA49C7AD /* Pods-FlurryIntegrationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryIntegrationSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryIntegrationSample/Pods-FlurryIntegrationSample.debug.xcconfig"; sourceTree = "<group>"; };
 		5B37B0551AD3A57B0087263F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = FlurryFullscreenAndBannerIntegration/en.lproj/InfoPlist.strings; sourceTree = SOURCE_ROOT; };
 		5B37B05D1AD4F4C00087263F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5B37B05E1AD4F4C00087263F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
@@ -171,9 +170,7 @@
 		5BB07AEF18E1051F007A7F50 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		5BB07AF318E1053C007A7F50 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		5BB07AF518E1054A007A7F50 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
-		6103858B427A54E56C6ACA27 /* Pods-FlurryIntegrationSample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryIntegrationSample.release.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryIntegrationSample/Pods-FlurryIntegrationSample.release.xcconfig"; sourceTree = "<group>"; };
-		867F721EE815799FC7F7A962 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA1A42DF33495C1242AE3D7D /* Pods-FlurryIntegrationSample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FlurryIntegrationSample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FlurryIntegrationSample/Pods-FlurryIntegrationSample.debug.xcconfig"; sourceTree = "<group>"; };
+		AEAACFE944DA034CC17200E8 /* libPods-FlurryIntegrationSample.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FlurryIntegrationSample.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,24 +190,13 @@
 				5BB07AF018E1051F007A7F50 /* Security.framework in Frameworks */,
 				5B4EE1EF19D4AFFD000B698B /* StoreKit.framework in Frameworks */,
 				5BB07AA718E0FFD8007A7F50 /* UIKit.framework in Frameworks */,
-				A80C40865084EB78011816F7 /* libPods-FlurryIntegrationSample.a in Frameworks */,
+				EEAE2FF0E45C58DE1C1006C1 /* libPods-FlurryIntegrationSample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		431ABB9AB86C73439803B9CB /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				46A6B5B92CE216D2E63FC9FF /* Pods.debug.xcconfig */,
-				2E4792F91FEE389DF1B439E8 /* Pods.release.xcconfig */,
-				EA1A42DF33495C1242AE3D7D /* Pods-FlurryIntegrationSample.debug.xcconfig */,
-				6103858B427A54E56C6ACA27 /* Pods-FlurryIntegrationSample.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		5B37B0571AD489E60087263F /* FlurryNativeIntegration */ = {
 			isa = PBXGroup;
 			children = (
@@ -297,7 +283,7 @@
 				5BB07AA818E0FFD8007A7F50 /* FlurryIntegrationSamples */,
 				5BB07AA118E0FFD8007A7F50 /* Frameworks */,
 				5BB07AA018E0FFD8007A7F50 /* Products */,
-				431ABB9AB86C73439803B9CB /* Pods */,
+				6430A86AF284B687CD0C15E8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -324,8 +310,7 @@
 				5BB07AA218E0FFD8007A7F50 /* Foundation.framework */,
 				5BB07AA418E0FFD8007A7F50 /* CoreGraphics.framework */,
 				5BB07AA618E0FFD8007A7F50 /* UIKit.framework */,
-				867F721EE815799FC7F7A962 /* libPods.a */,
-				1CCC4769B95F6280E2DAF826 /* libPods-FlurryIntegrationSample.a */,
+				AEAACFE944DA034CC17200E8 /* libPods-FlurryIntegrationSample.a */,
 			);
 			name = Frameworks;
 			sourceTree = SOURCE_ROOT;
@@ -374,6 +359,15 @@
 			path = ../FlurryFullscreenAndBannerIntegration/en.lproj;
 			sourceTree = "<group>";
 		};
+		6430A86AF284B687CD0C15E8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3F46AE20CFB2A4B9FA49C7AD /* Pods-FlurryIntegrationSample.debug.xcconfig */,
+				122E2BBB11FACD20E86C6683 /* Pods-FlurryIntegrationSample.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,12 +375,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BB07AD718E0FFD8007A7F50 /* Build configuration list for PBXNativeTarget "FlurryIntegrationSample" */;
 			buildPhases = (
-				CB92F48BD5262695D2A63A70 /* [CP] Check Pods Manifest.lock */,
+				EC31088B6C597D1B3C2E72CB /* [CP] Check Pods Manifest.lock */,
 				5BB07A9B18E0FFD8007A7F50 /* Sources */,
 				5BB07A9C18E0FFD8007A7F50 /* Frameworks */,
 				5BB07A9D18E0FFD8007A7F50 /* Resources */,
-				B353F46DE02FCB1A49882D3D /* [CP] Copy Pods Resources */,
-				A0DA1EE9C75E850757B2A5B0 /* [CP] Embed Pods Frameworks */,
+				D26E26EA0CD5D1AB4810F1CD /* [CP] Embed Pods Frameworks */,
+				0FAC062FD73339C55C078A84 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -407,7 +401,6 @@
 				ORGANIZATIONNAME = Flurry;
 				TargetAttributes = {
 					5BB07A9E18E0FFD8007A7F50 = {
-						DevelopmentTeam = S6JSG6FHB3;
 						SystemCapabilities = {
 							com.apple.InAppPurchase = {
 								enabled = 0;
@@ -488,22 +481,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A0DA1EE9C75E850757B2A5B0 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlurryIntegrationSample/Pods-FlurryIntegrationSample-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		B353F46DE02FCB1A49882D3D /* [CP] Copy Pods Resources */ = {
+		0FAC062FD73339C55C078A84 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -518,7 +496,22 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlurryIntegrationSample/Pods-FlurryIntegrationSample-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		CB92F48BD5262695D2A63A70 /* [CP] Check Pods Manifest.lock */ = {
+		D26E26EA0CD5D1AB4810F1CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FlurryIntegrationSample/Pods-FlurryIntegrationSample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC31088B6C597D1B3C2E72CB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -675,12 +668,12 @@
 		};
 		5BB07AD818E0FFD8007A7F50 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EA1A42DF33495C1242AE3D7D /* Pods-FlurryIntegrationSample.debug.xcconfig */;
+			baseConfigurationReference = 3F46AE20CFB2A4B9FA49C7AD /* Pods-FlurryIntegrationSample.debug.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = S6JSG6FHB3;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlurryFullscreenAndBannerIntegration/FlurryIntegrationSample-Prefix.pch";
 				INFOPLIST_FILE = "FlurryFullscreenAndBannerIntegration/FlurryIntegrationSample-Info.plist";
@@ -701,12 +694,12 @@
 		};
 		5BB07AD918E0FFD8007A7F50 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6103858B427A54E56C6ACA27 /* Pods-FlurryIntegrationSample.release.xcconfig */;
+			baseConfigurationReference = 122E2BBB11FACD20E86C6683 /* Pods-FlurryIntegrationSample.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = S6JSG6FHB3;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlurryFullscreenAndBannerIntegration/FlurryIntegrationSample-Prefix.pch";
 				INFOPLIST_FILE = "FlurryFullscreenAndBannerIntegration/FlurryIntegrationSample-Info.plist";
