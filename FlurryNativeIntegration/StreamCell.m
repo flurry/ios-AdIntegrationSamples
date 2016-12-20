@@ -84,7 +84,7 @@ static int widthForNonText = 162;
     
     int size1 = innerPadding + imageSize + innerPadding;
     int size2 = innerPadding + titleSize.height + innerPadding + summarySize.height;
-    NSLog(@"heightForNewsItem, %d", (outerPadding + categoryColorView + innerPadding + MAX(size1, size2) + innerPadding + outerPadding + 5));
+    // NSLog(@"heightForNewsItem, %d", (outerPadding + categoryColorView + innerPadding + MAX(size1, size2) + innerPadding + outerPadding + 5));
     return outerPadding + categoryColorView + innerPadding + MAX(size1, size2) + innerPadding + outerPadding + 5;
 }
 
