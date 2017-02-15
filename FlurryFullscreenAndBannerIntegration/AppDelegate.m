@@ -25,7 +25,7 @@
     [Flurry startSession: apiKEY];//@"6Z27CWHJXRC29QVJZX4R"];//
     
     FlurrySessionBuilder* builder = [[[[[FlurrySessionBuilder new]
-                                        withLogLevel:FlurryLogLevelCriticalOnly]
+                                        withLogLevel:FlurryLogLevelAll]
                                        withCrashReporting:YES]
                                       withSessionContinueSeconds:10]
                                      withAppVersion:@"0.1.2"];
