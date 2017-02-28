@@ -5,7 +5,7 @@ target 'FlurryIntegrationSample' do
   # use_frameworks!
 
   # Pods for FlurryIntegrationSample
-pod 'Flurry-iOS-SDK/FlurrySDK', '~>7.8.2'  #Analytics Pod
-pod 'Flurry-iOS-SDK/FlurryAds', '~>7.8.2' #Advertising Pod (requires Analytics)
+pod 'Flurry-iOS-SDK/FlurrySDK'  #Analytics Pod
+pod 'Flurry-iOS-SDK/FlurryAds' #Advertising Pod (requires Analytics)
 pod 'AFNetworking', '~> 3.1'
 end
