@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "Flurry.h"
-#import "FlurryAds.h"
+
 
 @implementation AppDelegate
 
