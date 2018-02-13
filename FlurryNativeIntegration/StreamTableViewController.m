@@ -87,7 +87,7 @@ static const int SECTION_SKIP = 3;
                                                                    nil]];
         [self.newsItems addObject:newsItem];
     }
-    static const int INIT_MAX_ADS = 10;
+    static const int INIT_MAX_ADS = 5;
     self.nativeAds = [NSMutableArray array];
     [self loadAds:INIT_MAX_ADS];
 
