@@ -6,6 +6,8 @@
 //  Copyright © 2016 Flurry Inc. All rights reserved.
 //
 
+#import <Foundation/Foundation.h>
+#import "FlurryConsent.h"
 
 
 /*!
@@ -32,7 +34,7 @@ typedef enum {
  *
  *  @note There is a maximum of 605 versions allowed for a single app.
  *
- *  @param version The custom version name.
+ *  @param value The custom version name.
  */
 - (FlurrySessionBuilder*) withAppVersion:(NSString *)value;
 
@@ -45,7 +47,7 @@ typedef enum {
  *  starting a new session upon resume.  The default value for the session timeout is 10
  *  seconds in the background.
  *
- *  @param seconds The time in seconds to set the session timeout to.
+ *  @param value The time in seconds to set the session timeout to.
  */
 - (FlurrySessionBuilder*) withSessionContinueSeconds:(NSInteger)value;
 
@@ -97,6 +99,52 @@ typedef enum {
  */
 - (FlurrySessionBuilder*) withShowErrorInLog:(BOOL) value;
 
+
+/*!
+ *  @brief Registers the consent information with the SDK. Consent information is used to determine if the gdpr laws are applicable
+ *  @since 8.5.0
+ *
+ *  Use this method to pass the consent information to the SDK
+ *
+ *  @note This method must be called prior to invoking #startSession:
+ *
+ *  @param consent  The consent information.
+ *                  @see (FlurryConsent#initWithGDPRScope:andConsentStrings:)
+ */
+
+- (FlurrySessionBuilder*) withConsent:(FlurryConsent*)consent;
+
+
+#if !TARGET_OS_WATCH
+/*!
+ *  @brief Enables implicit recording of Apple Store transactions.
+ *  @since 7.9.0
+ *
+ *  @note This method needs to be called before any transaction is finialized.
+ *
+ *  @param value @c YES to enable transaction logging with the default being @c NO.
+ *
+ */
+
+- (FlurrySessionBuilder*) withIAPReportingEnabled:(BOOL) value;
+
+/*!
+ *  @brief Enables opting out of background sessions being counted towards total sessions.
+ *  @since 8.1.0-rc.1
+ *
+ *  @note This method must be called prior to invoking #startSession:.
+ *
+ *  @param value @c NO to opt out of counting background sessions towards total sessions.
+ *  The default value for the session is @c YES
+ *
+ */
+
+- (FlurrySessionBuilder*) withIncludeBackgroundSessionsInMetrics:(BOOL) value;
+
+
+
+#endif
+
 #if TARGET_OS_TV
 /*!
  *  @brief Sets the minimum duration (in minutes) before a partial session report is sent to Flurry.
@@ -107,7 +155,7 @@ typedef enum {
  *
  *  @note This method must be called prior to invoking #startSession:.
  *
- *  @param duration The period after which a partial session report is sent to Flurry.
+ *  @param value The period after which a partial session report is sent to Flurry.
  */
 - (FlurrySessionBuilder*) withTVSessionReportingInterval:(NSInteger) value;
 
@@ -120,7 +168,7 @@ typedef enum {
  *
  *  @note This method must be called prior to invoking #startSession:.
  *
- *  @param  count The number of events after which partial session report is sent to Flurry.
+ *  @param value The number of events after which partial session report is sent to Flurry.
  */
 - (FlurrySessionBuilder*) withTVEventCountThreshold:(NSInteger) value;
 #endif
